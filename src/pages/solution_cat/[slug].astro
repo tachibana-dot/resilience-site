@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import SolutionCategoryPage from '../../components/SolutionCategoryPage.astro';
+import { solutionCategories } from '../../data/solutions';
+export function getStaticPaths() { return solutionCategories.map((category) => ({ params: { slug: category.slug }, props: { category } })); }
+const { category } = Astro.props;
+---
+<BaseLayout title={`${category.title} | LVNS RESILIENCE PROJECT`}><Header /><SolutionCategoryPage category={category} /><Footer /></BaseLayout>

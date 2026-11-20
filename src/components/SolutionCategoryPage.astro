@@ -1,0 +1,21 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import { getProductsForCategory } from '../data/solutions';
+const { category } = Astro.props;
+const categoryProducts = getProductsForCategory(category.slug);
+---
+<main class="listing-page solution-category-page">
+  <div class="section-inner">
+    <SectionHeading letter="B" rest="USINESS SOLUTION" sub="ビジネス ソリューション" />
+    <p class="breadcrumb"><a href="/">HOME</a><span>›</span>{category.title}</p>
+    <h1>{category.title}</h1>
+    <div class="product-grid">
+      {categoryProducts.map((product) => (
+        <a class="product-card" href={`/solution/${product.slug}/`}>
+          <figure><img src={product.image} alt="" loading="lazy" /></figure>
+          <div class="product-card-body"><h2>{product.title}</h2><p>{product.company}</p><span>詳しく見る</span></div>
+        </a>
+      ))}
+    </div>
+  </div>
+</main>

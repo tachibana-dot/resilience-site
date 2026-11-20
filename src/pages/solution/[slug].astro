@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { products, getCategory } from '../../data/solutions';
+export function getStaticPaths() { return products.map((product) => ({ params: { slug: product.slug }, props: { product } })); }
+const { product } = Astro.props;
+---
+<BaseLayout title={`${product.title} | LVNS RESILIENCE PROJECT`}>
+  <Header />
+  <main class="listing-page product-page">
+    <div class="article-inner">
+      <p class="eyebrow">BUSINESS SOLUTION</p>
+      <p class="breadcrumb"><a href="/">HOME</a><span>›</span>{product.categories.map((slug) => <a href={`/solution_cat/${slug}/`}>{getCategory(slug)?.title}</a>)}</p>
+      <h1>{product.title}</h1>
+      <p class="product-company">{product.company}</p>
+      <img class="product-main-image" src={product.image} alt="" />
+      <section class="product-copy"><h2>概要</h2><p>{product.summary}</p><h2>取り組みについて</h2><p>本プロジェクトでは、社会の現場に根ざした課題を起点に、企業・研究者・地域のみなさまと共創を進めています。</p></section>
+      <a class="back-link" href={`/solution_cat/${product.categories[0]}/`}>← ソリューション一覧へ</a>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
