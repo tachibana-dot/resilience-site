@@ -6,3 +6,44 @@
 @keyframes hero-fade{0%,10%{opacity:0;transform:scale(1.04)}14%,24%{opacity:1;transform:scale(1)}28%,100%{opacity:0;transform:scale(1)}}
 .hero-copy{z-index:3;left:10%}
 @media(max-width:800px){.hero-slider img{width:100%;opacity:0}.hero-slider img:nth-child(n+5){display:block}}
+
+/* Shared scale with the LVNS Water Cycle sister site. */
+.header-inner{height:120px;padding:10px 32px}
+.brand{width:auto}
+.brand img{width:auto;height:64px;max-width:40vw}
+.desktop-nav{gap:28px;margin-right:28px;font-family:'Open Sans',sans-serif;font-size:.95rem;font-style:italic;font-weight:600;letter-spacing:.04em}
+.header-actions{gap:16px}
+.language{gap:16px;font-size:.82rem;font-weight:700}
+.menu-toggle{width:42px;height:42px;padding:9px;border:1px solid #d9d3c8;border-radius:4px}
+.menu-toggle span{width:22px;height:2px;margin:4px auto}
+.hero{padding-top:120px}
+.hero-name{font-size:clamp(1.6rem,5vw,3.7rem)}
+.hero-org{font-size:clamp(1rem,2.2vw,1.5rem)}
+.hero-tagline{font-size:clamp(2.3rem,6vw,4.15rem);line-height:1}
+.section-heading h2{font-family:'Open Sans',sans-serif;font-size:clamp(2.8rem,6vw,4.7rem);font-weight:600;letter-spacing:.05em}
+.section-heading h2 span{font-size:1.33em}
+.section-heading p{letter-spacing:.1em;font-weight:700}
+.vision-copy h3{font-size:clamp(1.55rem,4vw,2.45rem);line-height:1.45}
+.vision-copy p{font-size:1.02rem;line-height:2;font-weight:600}
+.solution-card span{font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.7}
+.news-body h2,.news-card h3{font-size:1rem;line-height:1.6}
+.news-meta{font-size:.82rem}
+.outline-button,.contact-button{min-width:260px;min-height:58px;padding:0 56px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;line-height:1.6}
+.site-footer{font-size:.92rem}
+
+@media(max-width:1040px){
+  .header-inner{height:74px;padding:8px 18px}
+  .brand img{height:34.5px;max-width:52vw}
+  .desktop-nav{gap:16px}
+  .hero{padding-top:74px}
+}
+
+@media(max-width:800px){
+  .header-inner{height:auto;min-height:64px}
+  .brand img{height:29.3px;max-width:70vw}
+  .hero{padding-top:64px}
+  .menu-toggle{display:block}
+  .mobile-nav{font-size:1rem}
+  .section-heading h2{font-size:clamp(2.4rem,12vw,3.4rem)}
+  .outline-button,.contact-button{min-width:220px;padding:0 28px}
+}
