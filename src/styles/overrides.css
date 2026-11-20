@@ -37,12 +37,16 @@
 .organizer-logo{text-align:center;width:min(100%,340px);margin:52px auto 0}
 .organizer-logo p{margin:0 0 12px;font:italic 500 1.1rem 'Jost',sans-serif}
 .organizer-logo img{width:min(100%,280px);height:auto;margin:0 auto;object-fit:contain}
+.solution-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:clamp(42px,6vw,73px)}
+.solution-card figure{width:min(100%,200px);margin:0 auto}
+.news-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:3.3%;margin-top:clamp(42px,6vw,73px)}
 
 @media(max-width:1040px){
   .header-inner{height:74px;padding:8px 18px}
   .brand img{height:34.5px;max-width:52vw}
   .desktop-nav{gap:16px}
   .hero{padding-top:74px}
+  .news-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 }
 
 @media(max-width:800px){
@@ -55,6 +59,8 @@
   .outline-button,.contact-button{min-width:220px;padding:0 28px}
   .partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
   .partner-logo{min-height:104px}
+  .solution-grid,.news-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .solution-card figure{width:100%}
 }
 
-@media(max-width:520px){.partner-grid{grid-template-columns:1fr;gap:16px}}
+@media(max-width:520px){.partner-grid{grid-template-columns:1fr;gap:16px}.solution-grid,.news-grid{grid-template-columns:1fr;gap:22px}}
