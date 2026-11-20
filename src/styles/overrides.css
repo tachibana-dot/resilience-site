@@ -30,6 +30,13 @@
 .news-meta{font-size:.82rem}
 .outline-button,.contact-button{min-width:260px;min-height:58px;padding:0 56px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;line-height:1.6}
 .site-footer{font-size:.92rem}
+.partner-panel{padding:3rem 0 2rem}
+.partner-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:stretch}
+.partner-logo{background:#fff;border:1px solid var(--line);border-radius:5px;min-height:112px;padding:18px;display:grid;place-items:center}
+.partner-logo img{width:86%;max-height:82px;object-fit:contain}
+.organizer-logo{text-align:center;width:min(100%,340px);margin:52px auto 0}
+.organizer-logo p{margin:0 0 12px;font:italic 500 1.1rem 'Jost',sans-serif}
+.organizer-logo img{width:min(100%,280px);height:auto;margin:0 auto;object-fit:contain}
 
 @media(max-width:1040px){
   .header-inner{height:74px;padding:8px 18px}
@@ -46,4 +53,8 @@
   .mobile-nav{font-size:1rem}
   .section-heading h2{font-size:clamp(2.4rem,12vw,3.4rem)}
   .outline-button,.contact-button{min-width:220px;padding:0 28px}
+  .partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .partner-logo{min-height:104px}
 }
+
+@media(max-width:520px){.partner-grid{grid-template-columns:1fr;gap:16px}}
