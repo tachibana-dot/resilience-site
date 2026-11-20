@@ -64,3 +64,19 @@
 }
 
 @media(max-width:520px){.partner-grid{grid-template-columns:1fr;gap:16px}.solution-grid,.news-grid{grid-template-columns:1fr;gap:22px}}
+
+/* Resilience palette: neutral base with red/orange accents, no green. */
+:root{--green:#333333;--gold:#e60012;--cream:#fffbde;--line:#d7d7d7}
+.hero{background:#333}
+.hero::after{background:linear-gradient(90deg,rgba(0,0,0,.76),rgba(0,0,0,.28) 45%,rgba(0,0,0,.04) 78%),linear-gradient(0deg,rgba(0,0,0,.34),transparent 42%)}
+.section-dark{background:#333;color:#fff}
+.section-heading h2 span{color:#e60012}
+.desktop-nav a:hover,.language a:hover{color:#e60012}
+.language .active{border-color:#e60012}
+.menu-toggle span{background:#e60012}
+.outline-button,.contact-button{border-color:#e60012}
+.outline-button{color:#e60012}
+.outline-button:hover{background:#e60012}
+.contact-button{background:#e60012}
+.contact-button:hover{background:#f58220;color:#fff}
+.site-footer{background:#333}
