@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+
+const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const solutions = [
+  ['災害マネジメント', 'disaster.png', 'solution1'], ['建築', 'architecture.png', 'solution2'],
+  ['電気、ガス、水道', 'utilities.png', 'solution3'], ['交通、輸送', 'transport.png', 'solution4'],
+  ['コミュニティ', 'community.png', 'solution5'], ['ヘルスケア・医療', 'healthcare.png', 'solution6'],
+];
+---
+<BaseLayout>
+  <Header />
+  <main>
+    <section class="hero" aria-label="LVNS Resilience Project">
+      <div class="hero-copy"><p class="hero-name">LVNS RESILIENCE PROJECT</p><p class="hero-org">Organized by <span>Leave a Nest</span></p><p class="hero-tagline">by deep technology<br />for future generations</p></div>
+      <div class="hero-slider" aria-hidden="true">
+        {['a','b','c','d','e','f','g','h'].map((letter) => <img src={`/images/hero/fv${letter}.jpg`} alt="" loading={letter === 'a' ? 'eager' : 'lazy'} />)}
+      </div>
+    </section>
+
+    <section class="vision section-dark" id="vision">
+      <div class="section-inner vision-inner">
+        <SectionHeading letter="V" rest="ISION" />
+        <div class="vision-copy"><h3>しなやかで許容性のある<br class="mobile-only" />社会インフラを創造する</h3><p>効率化を追求した現在の社会システムは、「予想外」のリスクに対して脆弱であることが近年のさまざまな災害を通して明らかになってきました。さらにこれは災害に限った話ではなく、大規模・効率化を追求した現在の社会システム全般が抱える課題であると言えます。<br /><br />本プロジェクトでは、ベンチャー企業を中心としたさまざまなアセットをもつ企業群と共に「しなやかで許容性のある社会システム」のある未来の創造を目指します。</p></div>
+      </div>
+    </section>
+
+    <section class="solutions section-light" id="solutions"><div class="section-inner"><SectionHeading letter="B" rest="USINESS SOLUTION" sub="ビジネス ソリューション" /><div class="solution-grid">{solutions.map(([name, image, slug]) => <a class="solution-card" href={`/solutions/${slug}/`}><figure><img src={`/images/solutions/${image}`} alt="" loading="lazy" /></figure><span>{name}</span></a>)}</div></div></section>
+
+    <section class="news-section section-light" id="news"><div class="section-inner"><SectionHeading letter="N" rest="EWS" sub="リバネス・レジリエンス・プロジェクトの最新情報" /><div class="news-grid">{news.slice(0, 6).map((item) => <article class="news-card"><a href={`/news/${item.id}/`}><figure>{item.data.image && <img src={item.data.image} alt="" loading="lazy" />}</figure><div class="news-body"><h3>{item.data.title}</h3><div class="news-meta"><time datetime={item.data.date.toISOString()}>{item.data.date.toLocaleDateString('ja-JP')}</time><span>{item.data.category}</span></div></div></a></article>)}</div><a class="outline-button" href="/news/">ニュース一覧</a></div></section>
+
+    <section class="partners section-light" id="partners"><div class="section-inner"><SectionHeading letter="P" rest="ARTNER" sub="リバネス・レジリエンス・プロジェクトは、以下の企業・機関等が参加し、取り組んでいます。" /><div class="partner-panel"><p>Organized by</p><strong>Leave a Nest</strong></div></div></section>
+    <section class="contact section-dark" id="contact"><div class="section-inner contact-inner"><SectionHeading letter="C" rest="ONTACT" sub="お問い合わせ" /><p>プロジェクトに関するお問い合わせは、メールフォームからご連絡ください。</p><a class="contact-button" href="mailto:info@lne.st">メールでのお問い合わせ</a></div></section>
+  </main>
+  <Footer />
+</BaseLayout>

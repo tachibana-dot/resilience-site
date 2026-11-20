@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+const items = {
+  solution1: ['災害マネジメント', 'disaster.png', '災害の予測・把握・対応を支える技術とサービスを紹介します。'],
+  solution2: ['建築', 'architecture.png', '建物とまちの安全性、可変性、持続性を高める技術を紹介します。'],
+  solution3: ['電気、ガス、水道', 'utilities.png', 'ライフラインを分散化し、しなやかに維持する技術を紹介します。'],
+  solution4: ['交通、輸送', 'transport.png', '人・モノの移動を止めないための技術と仕組みを紹介します。'],
+  solution5: ['コミュニティ', 'community.png', '地域のつながりと共助を支える技術を紹介します。'],
+  solution6: ['ヘルスケア・医療', 'healthcare.png', '健康と医療の現場を支え、誰もが安心できる社会をつくる技術を紹介します。'],
+};
+export function getStaticPaths() {
+  const items = {
+    solution1: ['災害マネジメント', 'disaster.png', '災害の予測・把握・対応を支える技術とサービスを紹介します。'],
+    solution2: ['建築', 'architecture.png', '建物とまちの安全性、可変性、持続性を高める技術を紹介します。'],
+    solution3: ['電気、ガス、水道', 'utilities.png', 'ライフラインを分散化し、しなやかに維持する技術を紹介します。'],
+    solution4: ['交通、輸送', 'transport.png', '人・モノの移動を止めないための技術と仕組みを紹介します。'],
+    solution5: ['コミュニティ', 'community.png', '地域のつながりと共助を支える技術を紹介します。'],
+    solution6: ['ヘルスケア・医療', 'healthcare.png', '健康と医療の現場を支え、誰もが安心できる社会をつくる技術を紹介します。'],
+  };
+  return Object.entries(items).map(([slug, item]) => ({ params: { slug }, props: { item } }));
+}
+const { item } = Astro.props;
+---
+<BaseLayout title={`${item[0]} | LVNS RESILIENCE PROJECT`}><Header /><main class="listing-page"><div class="article-inner"><p class="eyebrow">BUSINESS SOLUTION</p><h1>{item[0]}</h1><img class="article-image" src={`/images/solutions/${item[1]}`} alt="" /><div class="prose"><p>{item[2]}</p><p>本プロジェクトでは、社会の現場に根ざした課題を起点に、企業・研究者・地域のみなさまと共創を進めています。</p></div><a class="back-link" href="/#solutions">← ソリューション一覧へ</a></div></main><Footer /></BaseLayout>

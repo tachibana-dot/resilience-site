@@ -1,0 +1,7 @@
+---
+const { letter, rest, sub } = Astro.props;
+---
+<div class="section-heading">
+  <h2><strong><span>{letter}</span>{rest}</strong></h2>
+  {sub && <p>{sub}</p>}
+</div>

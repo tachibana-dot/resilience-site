@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="LVNS Resilience Project ホーム">
+      <img src="/images/brand/logo.png" alt="LVNS Resilience Project" />
+    </a>
+    <nav class="desktop-nav" aria-label="メインナビゲーション">
+      <a href="/#news">News</a>
+      <a href="/#solutions">CORE TECHNOLOGIES</a>
+      <a href="/#partners">Team</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language"><a class="active" href="/">Japanese</a><a href="/en/">English</a></div>
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="/#news">News</a><a href="/#solutions">CORE TECHNOLOGIES</a><a href="/#partners">Team</a><a href="/#contact">Contact</a>
+  </nav>
+</header>
+<script>
+  const button = document.querySelector('.menu-toggle');
+  const header = document.querySelector('.site-header');
+  button?.addEventListener('click', () => {
+    const open = header?.classList.toggle('is-open') ?? false;
+    button?.setAttribute('aria-expanded', String(open));
+  });
+</script>

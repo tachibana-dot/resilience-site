@@ -1,0 +1,9 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+export async function getStaticPaths() { return (await getCollection('news')).map((entry) => ({ params: { slug: entry.id }, props: { entry } })); }
+const { entry } = Astro.props; const { Content } = await render(entry);
+---
+<BaseLayout title={`${entry.data.title} | LVNS RESILIENCE PROJECT`}><Header /><main class="article-page"><div class="article-inner"><p class="eyebrow">{entry.data.category}　{entry.data.date.toLocaleDateString('ja-JP')}</p><h1>{entry.data.title}</h1>{entry.data.image && <img class="article-image" src={entry.data.image} alt="" />}<div class="prose"><Content /></div><a class="back-link" href="/news/">← News一覧へ</a></div></main><Footer /></BaseLayout>
