@@ -80,6 +80,17 @@
 .contact-button{background:#e60012}
 .contact-button:hover{background:#f58220;color:#fff}
 .site-footer{background:#333}
+.team-page{padding:180px 0 100px;background:#fffbde}
+.team-intro{max-width:760px;margin:40px 0 0;font-weight:600;line-height:2}
+.team-group{margin-top:72px}
+.team-group h2{border-top:5px solid #e60012;color:#333;margin:0 0 28px;padding-top:16px;font-size:1.7rem;font-weight:500}
+.team-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.team-member{background:#fff;border:1px solid #e5e5e5;padding:22px}
+.team-member-head{display:grid;grid-template-columns:92px minmax(0,1fr);gap:18px;align-items:center}
+.team-member-head img{width:92px;height:92px;object-fit:cover;border-radius:50%}
+.team-member h3{font-size:1.05rem;line-height:1.5;margin:0}
+.team-member-head p{color:#777;font-size:.82rem;line-height:1.6;margin:7px 0 0}
+.team-message{border-top:1px solid #eee;margin:20px 0 0;padding-top:18px;font-size:.92rem;line-height:1.9}
 .solution-category-page{padding-top:180px;padding-bottom:100px}
 .solution-category-page .section-heading{max-width:760px}
 .breadcrumb{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:42px 0 14px;color:#777;font-size:.82rem}
@@ -106,5 +117,7 @@
 @media(max-width:800px){
   .solution-category-page,.product-page{padding-top:122px;padding-bottom:64px}
   .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .team-page{padding:122px 0 64px}
+  .team-list{grid-template-columns:1fr}
 }
 @media(max-width:520px){.product-grid{grid-template-columns:1fr}}

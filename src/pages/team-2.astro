@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import { teamGroups } from '../data/team';
+---
+<BaseLayout title="チームからのメッセージ | LVNS RESILIENCE PROJECT">
+  <Header />
+  <main class="team-page">
+    <div class="section-inner">
+      <SectionHeading letter="T" rest="EAM" sub="チームからのメッセージ" />
+      <p class="team-intro">リバネス・レジリエンス・プロジェクトは、以下の企業等が参加し、チームを組成して取り組んでいます。</p>
+      {teamGroups.map((group) => (
+        <section class="team-group">
+          <h2>{group.title}</h2>
+          <div class="team-list">
+            {group.members.map((member) => (
+              <article class="team-member">
+                <div class="team-member-head"><img src={member.image} alt="" loading="lazy" /><div><h3>{member.name}</h3><p>{member.role}</p></div></div>
+                <p class="team-message">{member.message}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
