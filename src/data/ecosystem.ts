@@ -21,7 +21,7 @@ export const ecosystemCompanies: EcosystemCompany[] = [
   { name: '株式会社e6s（えしっくす）', role: 'ソリューション提供企業', image: '/images/products/e6s.png', website: 'https://e6s.co.jp/', productSlugs: ['e6s'] },
   { name: 'NT技研工業株式会社', role: 'ソリューション提供企業', image: '/images/products/ntgiken.jpg', website: 'http://ntgiken.industries/', productSlugs: ['ntgiken'] },
   { name: '株式会社白獅子', role: 'ソリューション提供企業', image: '/images/products/snowlion.jpg', website: 'https://www.snowlion.co.jp/', productSlugs: ['snowlion'] },
-  { name: '株式会社人機一体', role: '関連ベンチャー', image: '/images/ventures/jinki-ittai.webp', description: '人型重機やロボットの遠隔操作技術で、鉄道・建設・災害対応などの重作業を支えます。', ventureUrl: 'https://ventures.lne.st/ventures/jinki-ittai/', productSlugs: [] },
+  { name: '株式会社人機一体', role: '関連ベンチャー', image: '/images/ventures/jinki-ittai-tech.webp', description: '人型重機やロボットの遠隔操作技術で、鉄道・建設・災害対応などの重作業を支えます。', ventureUrl: 'https://ventures.lne.st/ventures/jinki-ittai/', productSlugs: [] },
   { name: '株式会社Liberaware', role: '参画ベンチャー', image: '/images/news/liberaware.jpeg', website: 'https://liberaware.co.jp/', productSlugs: [] },
   { name: '株式会社テラ・ラボ', role: '参画ベンチャー', image: '/images/news/terra-labo.jpeg', website: 'https://terra-labo.jp/', productSlugs: [] },
   { name: '株式会社ナチュラニクス', role: '関連ベンチャー', image: '/images/ventures/naturenix.webp', description: '3分充電・長寿命電池を基盤に、モビリティや災害対応型ポータブル蓄電池を展開します。', ventureUrl: 'https://ventures.lne.st/ventures/naturenix/', productSlugs: [] },
