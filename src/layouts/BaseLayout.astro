@@ -2,9 +2,10 @@
 import '../styles/global.css';
 import '../styles/overrides.css';
 const { title = 'LVNS RESILIENCE PROJECT', description = 'しなやかで許容性のある社会インフラを創造する' } = Astro.props;
+const isEnglish = Astro.url.pathname === '/en' || Astro.url.pathname.startsWith('/en/');
 ---
 <!doctype html>
-<html lang="ja">
+<html lang={isEnglish ? 'en' : 'ja'}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />

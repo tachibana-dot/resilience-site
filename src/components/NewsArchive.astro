@@ -4,13 +4,14 @@ const pageSize = 10;
 const totalPages = Math.max(1, Math.ceil(news.length / pageSize));
 const pageItems = news.slice((page - 1) * pageSize, page * pageSize);
 const slugOf = (item) => item.data.slug ?? item.id;
+const categoryLabel = (item) => item.data.language === 'en' && item.data.category === 'ニュース' ? 'News' : item.data.category;
 ---
 <main class="listing-page news-archive-page">
   <div class="section-inner">
     <p class="eyebrow">LVNS RESILIENCE PROJECT</p>
     <h1>{title}</h1>
     <div class="news-grid archive-news-grid">
-      {pageItems.map((item) => <article class="news-card"><a href={`${basePath}/${slugOf(item)}/`}><figure><img src={item.data.image ?? '/images/noimg.jpg'} alt="" loading="lazy" /></figure><div class="news-body"><h2>{item.data.title}</h2><div class="news-meta"><time>{item.data.date.toLocaleDateString(item.data.language === 'en' ? 'en-US' : 'ja-JP')}</time><span>{item.data.category}</span></div></div></a></article>)}
+      {pageItems.map((item) => <article class="news-card"><a href={`${basePath}/${slugOf(item)}/`}><figure><img src={item.data.image ?? '/images/noimg.jpg'} alt="" loading="lazy" /></figure><div class="news-body"><h2>{item.data.title}</h2><div class="news-meta"><time>{item.data.date.toLocaleDateString(item.data.language === 'en' ? 'en-US' : 'ja-JP')}</time><span>{categoryLabel(item)}</span></div></div></a></article>)}
     </div>
     {totalPages > 1 && <nav class="pagination" aria-label="ニュースページ"><a class:list={{ disabled: page === 1 }} href={page === 1 ? `${basePath}/` : `${basePath}/page/${page - 1}/`}>←</a>{Array.from({ length: totalPages }, (_, index) => index + 1).map((number) => <a class:list={{ current: number === page }} href={number === 1 ? `${basePath}/` : `${basePath}/page/${number}/`}>{number}</a>)}<a class:list={{ disabled: page === totalPages }} href={page === totalPages ? `${basePath}/` : `${basePath}/page/${page + 1}/`}>→</a></nav>}
   </div>

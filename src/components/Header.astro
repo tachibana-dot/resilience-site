@@ -1,21 +1,28 @@
+---
+const isEnglish = Astro.url.pathname === '/en' || Astro.url.pathname.startsWith('/en/');
+const currentPath = Astro.url.pathname;
+const japanesePath = isEnglish ? (currentPath.replace(/^\/en(?=\/|$)/, '') || '/') : currentPath;
+const englishPath = isEnglish ? currentPath : `/en${currentPath === '/' ? '/' : currentPath}`;
+const prefix = isEnglish ? '/en' : '';
+---
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="/" aria-label="LVNS Resilience Project ホーム">
+    <a class="brand" href={`${prefix}/`} aria-label={isEnglish ? 'LVNS Resilience Project home' : 'LVNS Resilience Project ホーム'}>
       <img src="/images/brand/logo.png" alt="LVNS Resilience Project" />
     </a>
-    <nav class="desktop-nav" aria-label="メインナビゲーション">
-      <a href="/#news">News</a>
-      <a href="/#solutions">CORE TECHNOLOGIES</a>
-      <a href="/team-2/">Team</a>
-      <a href="/#contact">Contact</a>
+    <nav class="desktop-nav" aria-label={isEnglish ? 'Main navigation' : 'メインナビゲーション'}>
+      <a href={`${prefix}/#news`}>News</a>
+      <a href={`${prefix}/#solutions`}>CORE TECHNOLOGIES</a>
+      <a href={`${prefix}/team-2/`}>Team</a>
+      <a href={`${prefix}/#contact`}>Contact</a>
     </nav>
     <div class="header-actions">
-      <div class="language"><a class="active" href="/">Japanese</a><a href="/en/">English</a></div>
-      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="language"><a class={isEnglish ? '' : 'active'} href={japanesePath}>Japanese</a><a class={isEnglish ? 'active' : ''} href={englishPath}>English</a></div>
+      <button class="menu-toggle" type="button" aria-label={isEnglish ? 'Open menu' : 'メニューを開く'} aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <nav class="mobile-nav" aria-label="モバイルナビゲーション">
-    <a href="/#news">News</a><a href="/#solutions">CORE TECHNOLOGIES</a><a href="/team-2/">Team</a><a href="/#contact">Contact</a>
+  <nav class="mobile-nav" aria-label={isEnglish ? 'Mobile navigation' : 'モバイルナビゲーション'}>
+    <a href={`${prefix}/#news`}>News</a><a href={`${prefix}/#solutions`}>CORE TECHNOLOGIES</a><a href={`${prefix}/team-2/`}>Team</a><a href={`${prefix}/#contact`}>Contact</a>
   </nav>
 </header>
 <script>

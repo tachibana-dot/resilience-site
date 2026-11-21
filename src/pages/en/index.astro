@@ -1,6 +1,45 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import { ecosystemCompanies, ecosystemProducts } from '../../data/ecosystem';
+
+const news = (await getCollection('news')).filter((item) => item.data.language === 'en').sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const solutions = [
+  ['Disaster Management', 'disaster.png', 'solution1'], ['Architecture', 'architecture.png', 'solution2'],
+  ['Electricity, Gas & Water', 'utilities.png', 'solution3'], ['Transport & Mobility', 'transport.png', 'solution4'],
+  ['Community', 'community.png', 'solution5'], ['Healthcare & Medicine', 'healthcare.png', 'solution6'],
+];
+const roleLabels: Record<string, string> = { 'ソリューション提供企業': 'Solution provider', '関連ベンチャー': 'Related venture', '参画ベンチャー': 'Project venture' };
+const descriptions: Record<string, string> = {
+  '株式会社人機一体': 'Develops remote-operation technology for humanoid heavy machinery and robots used in infrastructure maintenance and disaster response.',
+  '株式会社ナチュラニクス': 'Builds energy and mobility services around fast-charging, long-life batteries and portable storage for disaster response.',
+  '株式会社Sydecas': 'A food-tech company creating new forms of food from konjac-derived materials, including lower-sugar and lower-fat alternatives.',
+  '株式会社Aster': 'Develops Aster Power Coating, a paint-on seismic reinforcement material for existing walls and block fences.',
+  '環境微生物研究所株式会社': 'Uses microorganisms to convert waste vegetables and other materials into methane, electricity and liquid fertilizer.',
+  '株式会社vitom': 'Optimizes starch formulation and heating conditions to make reliable food for everyday life and emergencies.',
+};
+const categoryLabel = (category: string) => category === 'ニュース' ? 'News' : category;
 ---
-<BaseLayout title="LVNS RESILIENCE PROJECT"><Header /><main class="english-home"><section class="hero" aria-label="LVNS Resilience Project"><div class="hero-copy"><p class="hero-name">LVNS RESILIENCE PROJECT</p><p class="hero-org">Organized by <span>Leave a Nest</span></p><p class="hero-tagline">by deep technology<br />for future generations</p></div><div class="hero-slider" aria-hidden="true">{['a','b','c','d','e','f','g','h'].map((letter) => <img src={`/images/hero/fv${letter}.jpg`} alt="" loading={letter === 'a' ? 'eager' : 'lazy'} />)}</div></section><section class="legacy-page english-home-links"><div class="section-inner"><h1>LVNS RESILIENCE PROJECT</h1><p>Building resilient social infrastructure with deep technology.</p><div class="english-home-actions"><a class="outline-button" href="/en/news/">News</a><a class="outline-button" href="/en/core-technology/">Core Technology</a><a class="outline-button" href="/en/team-2/">Team</a><a class="outline-button" href="/en/contact/">Contact</a></div></div></section></main><Footer /></BaseLayout>
+<BaseLayout title="LVNS RESILIENCE PROJECT | English" description="Creating resilient and tolerant social infrastructure with deep technology.">
+  <Header />
+  <main class="english-home">
+    <section class="hero" aria-label="LVNS Resilience Project">
+      <div class="hero-copy"><p class="hero-name">LVNS RESILIENCE PROJECT</p><p class="hero-org">Organized by <span>Leave a Nest</span></p><p class="hero-tagline">by deep technology<br />for future generations</p></div>
+      <div class="hero-slider" aria-hidden="true">{['a','b','c','d','e','f','g','h'].map((letter) => <img src={`/images/hero/fv${letter}.jpg`} alt="" loading={letter === 'a' ? 'eager' : 'lazy'} />)}</div>
+    </section>
+
+    <section class="vision section-dark" id="vision"><div class="section-inner vision-inner"><SectionHeading letter="V" rest="ISION" /><div class="vision-copy"><h3>Creating resilient and tolerant<br class="mobile-only" /> social infrastructure</h3><p>Our highly optimized social systems have proven vulnerable to unexpected risks through recent disasters. This is not limited to disasters; it is a challenge shared by large-scale, efficiency-driven systems in general.<br /><br />The project works with ventures and companies that bring diverse assets together to create a future with resilient and tolerant social infrastructure.</p></div></div></section>
+
+    <section class="solutions section-light" id="solutions"><div class="section-inner"><SectionHeading letter="B" rest="USINESS SOLUTION" sub="Business Solutions" /><div class="solution-grid">{solutions.map(([name, image, slug]) => <a class="solution-card" href={`/en/solution_cat/${slug}/`}><figure><img src={`/images/solutions/${image}`} alt={name} loading="lazy" /></figure><span>{name}</span></a>)}</div></div></section>
+
+    <section class="news-section section-light" id="news"><div class="section-inner"><SectionHeading letter="N" rest="EWS" sub="Latest news from the LVNS Resilience Project" /><div class="news-grid">{news.slice(0, 5).map((item) => <article class="news-card"><a href={`/en/${item.data.slug ?? item.id}/`}><figure><img src={item.data.image ?? '/images/noimg.jpg'} alt="" loading="lazy" /></figure><div class="news-body"><h3>{item.data.title}</h3><div class="news-meta"><time datetime={item.data.date.toISOString()}>{item.data.date.toLocaleDateString('en-US')}</time><span>{categoryLabel(item.data.category)}</span></div></div></a></article>)}</div><a class="outline-button" href="/en/news/">View all news</a></div></section>
+
+    <section class="ecosystem section-light" id="ecosystem"><div class="section-inner"><SectionHeading letter="E" rest="COSYSTEM" sub="Ventures and companies connected to the Resilience Project" /><p class="ecosystem-intro">We introduce technologies and services that help make social infrastructure more resilient.</p><div class="ecosystem-grid">{ecosystemCompanies.map((company) => <article class="ecosystem-card"><div class="ecosystem-card-image"><img src={company.image} alt={`${company.name} logo`} loading="lazy" /></div><div class="ecosystem-card-body"><p class="ecosystem-role">{roleLabels[company.role] ?? company.role}</p><h3>{company.name}</h3>{descriptions[company.name] && <p class="ecosystem-description">{descriptions[company.name]}</p>}<div class="ecosystem-products">{ecosystemProducts(company.productSlugs).map((product) => <a href={`/en/solution/${product!.slug}/`}>View solution: {product!.title}</a>)}</div><div class="ecosystem-links">{company.ventureUrl && <a class="ecosystem-external" href={company.ventureUrl} target="_blank" rel="noreferrer">View on L VENTURES ↗</a>}{company.website && <a class="ecosystem-external" href={company.website} target="_blank" rel="noreferrer">Company website ↗</a>}</div></div></article>)}</div></div></section>
+
+    <section class="contact section-dark" id="contact"><div class="section-inner contact-inner"><SectionHeading letter="C" rest="ONTACT" sub="Contact" /><p>For inquiries about the project, please contact us by email.</p><a class="contact-button" href="mailto:info@lne.st">Contact by email</a></div></section>
+  </main>
+  <Footer />
+</BaseLayout>
