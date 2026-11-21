@@ -23,6 +23,7 @@ export const ecosystemCompanies: EcosystemCompany[] = [
   { name: '株式会社白獅子', role: 'ソリューション提供企業', image: '/images/products/snowlion.jpg', description: '災害体験や医療教育をVRで再現し、いざという時に備える学習・訓練を支援します。', website: 'https://www.snowlion.co.jp/', productSlugs: ['snowlion'] },
   { name: '株式会社人機一体', role: '関連ベンチャー', image: '/images/ventures/jinki-ittai-tech.webp', description: '人型重機やロボットの遠隔操作技術で、鉄道・建設・災害対応などの重作業を支えます。', ventureUrl: 'https://ventures.lne.st/ventures/jinki-ittai/', productSlugs: [] },
   { name: '株式会社Liberaware', role: '参画ベンチャー', image: '/images/news/liberaware.jpeg', description: '狭く、暗く、危険な空間を小型ドローンで点検し、災害時や平時のインフラ維持管理を安全・省力化します。', website: 'https://liberaware.co.jp/', productSlugs: [] },
+  { name: '株式会社サグリ', role: '関連ベンチャー', image: '/images/ventures/sagri-disaster-map.png', description: '衛星画像解析とAI・地理空間データを活用し、災害時の被害や支援情報を地図上で可視化します。', ventureUrl: 'https://ventures.lne.st/ventures/sagri/', productSlugs: [] },
   { name: '株式会社テラ・ラボ', role: '参画ベンチャー', image: '/images/news/terra-labo.jpeg', description: '固定翼無人航空機による広域センシングで、災害時の状況把握や復旧・復興に必要な情報収集を支えます。', website: 'https://terra-labo.jp/', productSlugs: [] },
   { name: '株式会社ナチュラニクス', role: '関連ベンチャー', image: '/images/ventures/naturenix-tech.webp', description: '3分充電・長寿命電池を基盤に、モビリティや災害対応型ポータブル蓄電池を展開します。', ventureUrl: 'https://ventures.lne.st/ventures/naturenix/', productSlugs: [] },
   { name: '株式会社Aster', role: '関連ベンチャー', image: '/images/ventures/aster-tech.webp', description: '塗布型の耐震補強材Aster Power Coatingで、既存の壁やブロック塀の防災性能を高めます。', ventureUrl: 'https://ventures.lne.st/ventures/aster/', productSlugs: [] },
