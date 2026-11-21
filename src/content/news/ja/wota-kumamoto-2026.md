@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "wota-kumamoto-2026"
 originalUrl: "https://contents.wota.co.jp/hubfs/2026-kumamoto/fact-0827.pdf"
-image: "/images/ventures/wota.png"
+image: "/images/ventures/wota-kumamoto-feature.png"
 tags: ["参画ベンチャー", "WOTA", "災害支援", "生活用水"]
 ---
 
