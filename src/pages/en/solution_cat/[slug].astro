@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+const categories = { solution1: 'Disaster Management', solution2: 'Architecture', solution3: 'Electricity, gas, water', solution4: 'Transportation', solution5: 'Community', solution6: 'Healthcare and Medical' };
+const productsByCategory = { solution1: ['ecofront', 'planetarywellness', 'pf4', 'soten', 'airtruck', 'tenchijin'], solution2: ['soten'], solution3: ['challenergy', 'e6s', 'ecofront', 'ntgiken', 'tenchijin'], solution4: ['airtruck', 'pf4', 'soten'], solution5: ['planetarywellness'], solution6: ['planetarywellness', 'snowlion'] };
+const entries = await getCollection('solutions');
+export function getStaticPaths() { const categoryEntries = { solution1: 'Disaster Management', solution2: 'Architecture', solution3: 'Electricity, gas, water', solution4: 'Transportation', solution5: 'Community', solution6: 'Healthcare and Medical' }; return Object.entries(categoryEntries).map(([slug, title]) => ({ params: { slug }, props: { slug, title } })); }
+const { slug, title } = Astro.props;
+const products = entries.filter((entry) => entry.data.language === 'en' && productsByCategory[slug].includes(entry.data.slug));
+---
+<BaseLayout title={`${title} | LVNS RESILIENCE PROJECT`}><Header /><main class="listing-page solution-category-page"><div class="section-inner"><p class="eyebrow">BUSINESS SOLUTION</p><p class="breadcrumb"><a href="/en/">HOME</a><span>›</span>{title}</p><h1>{title}</h1><div class="product-grid">{products.map((product) => <a class="product-card" href={`/en/solution/${product.data.slug}/`}><div class="product-card-body"><h2>{product.data.title}</h2><span>View details</span></div></a>)}</div></div></main><Footer /></BaseLayout>

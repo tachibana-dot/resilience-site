@@ -1,0 +1,10 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+export async function getStaticPaths() { return (await getCollection('solutions')).filter((entry) => entry.data.language === 'en').map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } })); }
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<BaseLayout title={`${entry.data.title} | LVNS RESILIENCE PROJECT`}><Header /><main class="article-page product-page"><div class="article-inner"><p class="eyebrow">BUSINESS SOLUTION</p><p class="breadcrumb"><a href="/en/">HOME</a><span>›</span><a href="/en/solution_cat/solution1/">Business Solutions</a></p><h1>{entry.data.title}</h1><div class="prose legacy-content"><Content /></div><a class="back-link" href="/en/solution_cat/solution1/">← Back to Business Solutions</a></div></main><Footer /></BaseLayout>

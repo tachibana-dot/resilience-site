@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Header from '../../../../components/Header.astro';
+import Footer from '../../../../components/Footer.astro';
+import NewsArchive from '../../../../components/NewsArchive.astro';
+const news = (await getCollection('news')).filter((item) => item.data.language === 'en').sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+export async function getStaticPaths() { const allNews = (await getCollection('news')).filter((item) => item.data.language === 'en'); const total = Math.ceil(allNews.length / 10); return Array.from({ length: Math.max(0, total - 1) }, (_, index) => ({ params: { page: String(index + 2) }, props: { page: index + 2 } })); }
+const { page } = Astro.props;
+---
+<BaseLayout title={`News ${page} | LVNS RESILIENCE PROJECT`}><Header /><NewsArchive news={news} title="News" page={page} basePath="/en/news" /><Footer /></BaseLayout>

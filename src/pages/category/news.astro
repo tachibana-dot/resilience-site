@@ -1,0 +1,9 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import NewsArchive from '../../components/NewsArchive.astro';
+const news = (await getCollection('news')).filter((item) => item.data.language === 'ja').sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<BaseLayout title="News | LVNS RESILIENCE PROJECT"><Header /><NewsArchive news={news} /><Footer /></BaseLayout>

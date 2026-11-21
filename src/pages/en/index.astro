@@ -1,0 +1,6 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="LVNS RESILIENCE PROJECT"><Header /><main class="english-home"><section class="hero" aria-label="LVNS Resilience Project"><div class="hero-copy"><p class="hero-name">LVNS RESILIENCE PROJECT</p><p class="hero-org">Organized by <span>Leave a Nest</span></p><p class="hero-tagline">by deep technology<br />for future generations</p></div><div class="hero-slider" aria-hidden="true">{['a','b','c','d','e','f','g','h'].map((letter) => <img src={`/images/hero/fv${letter}.jpg`} alt="" loading={letter === 'a' ? 'eager' : 'lazy'} />)}</div></section><section class="legacy-page english-home-links"><div class="section-inner"><h1>LVNS RESILIENCE PROJECT</h1><p>Building resilient social infrastructure with deep technology.</p><div class="english-home-actions"><a class="outline-button" href="/en/news/">News</a><a class="outline-button" href="/en/core-technology/">Core Technology</a><a class="outline-button" href="/en/team-2/">Team</a><a class="outline-button" href="/en/contact/">Contact</a></div></div></section></main><Footer /></BaseLayout>

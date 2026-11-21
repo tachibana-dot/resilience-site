@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import html
+import json
+import re
+from pathlib import Path
+from urllib.request import Request, urlopen
+from lxml import html as lxml_html
+
+ROOT = Path(__file__).resolve().parents[1]
+BASE = 'https://resilience.lne.st'
+
+
+def fetch(url: str) -> bytes:
+    request = Request(url, headers={'User-Agent': 'LVNS-resilience-migration/1.0'})
+    with urlopen(request, timeout=15) as response:
+        return response.read()
+
+
+def write_page(item: dict, language: str, slug: str, source_url: str) -> None:
+    tree = lxml_html.fromstring(item['content']['rendered'])
+    for node in tree.xpath('.//script | .//style | .//noscript'):
+        node.getparent().remove(node)
+    for image in tree.xpath('.//img'):
+        image.attrib.pop('srcset', None)
+        image.attrib.pop('sizes', None)
+    body = ''.join(lxml_html.tostring(child, encoding='unicode', method='html') for child in tree)
+    body = re.sub(r'\s+\n', '\n', body).strip()
+    title = html.unescape(item['title']['rendered'])
+    out = ROOT / 'src' / 'content' / 'pages' / language / f'{slug}.md'
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(f'---\ntitle: {json.dumps(title, ensure_ascii=False)}\nlanguage: {language}\nslug: {json.dumps(slug)}\noriginalUrl: {json.dumps(source_url)}\n---\n\n{body}\n', encoding='utf-8')
+
+
+def main() -> None:
+    pages = json.loads(fetch(f'{BASE}/wp-json/wp/v2/pages?per_page=100').decode())
+    selected_ja = {'core-technology': 103, 'contact': 115, 'download': 824}
+    selected_en = {'core-technology': 304, 'contact': 214, 'team-2': 356, 'team-2-2': 356}
+    by_id = {item['id']: item for item in pages}
+    for slug, page_id in selected_ja.items():
+        write_page(by_id[page_id], 'ja', slug, f'{BASE}/{slug}/')
+    for slug, page_id in selected_en.items():
+        write_page(by_id[page_id], 'en', slug, f'{BASE}/en/{slug}/')
+    print('imported legacy pages')
+
+
+if __name__ == '__main__':
+    main()
