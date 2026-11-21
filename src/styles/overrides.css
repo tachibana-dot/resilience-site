@@ -84,6 +84,7 @@
 .organizer-logo{text-align:center;width:min(100%,340px);margin:52px auto 0}
 .organizer-logo p{margin:0 0 12px;font:italic 500 1.1rem 'Jost',sans-serif}
 .organizer-logo img{width:min(100%,280px);height:auto;margin:0 auto;object-fit:contain}
+.solutions-intro{max-width:680px;margin:2rem 0 0;font-size:1rem;line-height:1.8}
 .solution-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:clamp(42px,6vw,73px)}
 .solution-card figure{width:min(100%,170px);margin:0 auto}
 .solution-card figure{background:var(--cream)}
