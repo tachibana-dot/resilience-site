@@ -1,33 +1,34 @@
 ---
-title: "TEAM"
+title: "チームからのメッセージ"
 language: ja
 slug: "team-2"
 originalUrl: "https://resilience.lne.st/team-2/"
 ---
 
-<h2 style="text-align: center;margin-bottom: 0">Message</h2>
-<p class="section-title__sub" style="margin-top: 0">The LVNS RESILIENCE PROJECT involves various companies and<br>
-institutions that are working together in teams.</p>
+<div class="inside temp-page article__contents">
+<h2 style="text-align: center;margin-bottom: 0">参加チームのメッセージ</h2>
+<p class="section-title__sub" style="margin-top: 0">リバネス・レジリエンス・プロジェクトは、<br>
+以下の企業等が参加し、チームを組成して取り組んでいます。</p>
 <div style="margin-bottom: 3rem">
-<h2 style="padding: 0 1rem;border-left: 4px solid #f7a531"><b>Organizer</b></h2>
+<h2 style="padding: 0 1rem;border-left: 4px solid #f7a531"><b>主催</b></h2>
 <table style="border-collapse: collapse;width: 100%">
 <tbody>
 <tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>Leave a Nest Co., Ltd. President Group CEO　Yukihiro Maru</strong></td>
+<td style="width: 100%"><strong>株式会社リバネス 代表取締役 グループCEO　丸 幸弘</strong></td>
 </tr>
 </tbody>
 </table>
 <table style="border-collapse: collapse;width: 100%;height: 129px">
 <tbody>
 <tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-563" src="/images/imported/pages/ja-team-2-0.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">During the Noto earthquake, our fellow startups rushed to the disaster area with a strong desire to help, without being instructed by anyone. They are our alumni from TECH PLANTER program. However, while the technology of each company has matured, Japan still lacks a system that functions as a social system and connects normal times with emergencies. Furthermore, not only in Japan but also when we look at the world, there are many other challenges such as fires and floods. Through this project, we develop deep-tech in Japan spread to the world.</td>
+<td style="width: 25.5827%;height: 129px"><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-563" src="/images/imported/pages/ja-team-2-0.jpg" alt="" width="800" height="800"></td>
+<td style="width: 74.4173%;height: 129px">能登地震の際にテックプランターから生まれ育ったベンチャーたちが、誰に指示されたわけでもなく、助けに行きたいという一心で被災地に駆けつけました。しかし、各社の技術は成熟してきたものの、日本にはまだ社会システムとして動く仕組みや平時と有事をつなぐ仕組みがありません。さらに、日本の震災だけでなく、世界に目を向けると、火災や水害など他の課題も山積しています。このプロジェクトを通じて日本で組み上げたディープテックを世界に広げていきます。</td>
 </tr>
 </tbody>
 </table>
+<p> </p>
 </div>
-<p>&lt;!–</p>
-<div style="margin-bottom: 3rem">
+<div class="en__hidden" style="margin-bottom: 3rem">
 <h2 style="padding: 0 1rem;border-left: 4px solid #f7a531"><b>企業パートナー</b></h2>
 <table style="border-collapse: collapse;width: 100%">
 <tbody>
@@ -39,11 +40,12 @@ institutions that are working together in teams.</p>
 <table style="border-collapse: collapse;width: 100%;height: 129px">
 <tbody>
 <tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-569" src="/images/imported/pages/ja-team-2-1.jpg" alt="" width="800" height="800"></td>
+<td style="width: 25.5827%;height: 129px"><img decoding="async" class="alignnone size-medium wp-image-569" src="/images/imported/pages/ja-team-2-1.jpg" alt="" width="800" height="800"></td>
 <td style="width: 74.4173%;height: 129px">ボトリングした水の製造から販売、宅配に至るまでを一貫して行う宅配水事業をフランチャイズ展開しております。全国にフランチャイズ展開しているので、有事の際は地場企業の協力のもと、どこでも水を作れる環境があります。平時の時には、常に一定量の飲食料を家に備蓄しておくローリングストックの考え方で違和感なく使ってもらえるのが利点になります。技術をもっている方々と共にインフラにねざした事業を創っていきたいです。</td>
 </tr>
 </tbody>
 </table>
+<p> </p>
 <table style="border-collapse: collapse;width: 100%">
 <tbody>
 <tr style="background-color: #f7a531">
@@ -54,11 +56,12 @@ institutions that are working together in teams.</p>
 <table style="border-collapse: collapse;width: 100%;height: 129px">
 <tbody>
 <tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-571" src="/images/imported/pages/ja-team-2-2.jpg" alt="" width="800" height="800"></td>
+<td style="width: 25.5827%;height: 129px"><img decoding="async" class="alignnone size-medium wp-image-571" src="/images/imported/pages/ja-team-2-2.jpg" alt="" width="800" height="800"></td>
 <td style="width: 74.4173%;height: 129px">今年新たに、「想いと技術をつなぎ、想像を超える未来を切り拓く」をパーパスに掲げました。その取組みをリードするためにR&amp;B推進センターを立ち上げ、事業構想の一つとしてレジリエンス領域を考え始めています。我々はR&amp;B（Research &amp; Business Development）を通じて、事業開発の企画から出口の販売サービスまでを幅広く支援できると考えています。本プロジェクトを通じて、仲間をつくりながらレジリエントな社会を創っていきたいです。</td>
 </tr>
 </tbody>
 </table>
+<p> </p>
 <table style="border-collapse: collapse;width: 100%">
 <tbody>
 <tr style="background-color: #f7a531">
@@ -74,14 +77,14 @@ institutions that are working together in teams.</p>
 </tr>
 </tbody>
 </table>
+<p> </p>
 </div>
-<p>–&gt;</p>
 <div style="margin-bottom: 3rem">
-<h2 style="padding: 0 1rem;border-left: 4px solid #f7a531"><b>Venture partner</b></h2>
+<h2 style="padding: 0 1rem;border-left: 4px solid #f7a531"><b>コアテクノロジーズ</b></h2>
 <table style="border-collapse: collapse;width: 100%">
 <tbody>
 <tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>WOTA CORP. President and CEO　Yosuke Maeda </strong></td>
+<td style="width: 100%"><strong>WOTA株式会社 代表取締役 兼 CEO　前田 瑶介 </strong></td>
 </tr>
 </tbody>
 </table>
@@ -89,97 +92,7 @@ institutions that are working together in teams.</p>
 <tbody>
 <tr style="height: 129px">
 <td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-565" src="/images/imported/pages/ja-team-2-4.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">WOTA Corp. is developing small-scale, decentralized water recycling systems that enables water use in situations where waterworks are not available. In response to the Noto Peninsula Earthquake, the company received requests from Ishikawa Prefecture and six cities and towns, and started providing private shower and handwashing stands from January 4th, achieving coverage of almost the entire Noto Peninsula by the end of January, and is still continuing to provide them. However, there is a significant lack of measures for “national-level disasters” such as the Tokyo Metropolitan Area Earthquake and the Nankai Trough Earthquake, which are anticipated to cause water shortages hundreds of times greater than in the Noto Peninsula. It is necessary to develop a social system to ensure access to water in times of disaster while keeping costs down.</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%">
-<tbody>
-<tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>ACSL Ltd. Head of Business Development Unit　Daisuke Sasaki </strong></td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%;height: 129px">
-<tbody>
-<tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-577" src="/images/imported/pages/ja-team-2-5.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">In response to a request from Wajima City after the Noto Peninsula earthquake, we conducted on-site activities. Before we delivered medicine by drone, the Japan Self-Defense Forces (JSDF) and local residents had been obtaining medicine on foot. By using drones as an alternative approach, we were able to free up their time for other tasks. Additionally, with challenges in land-based logistics, we conducted aerial surveys to see if ships could dock at the port. We aim to address various challenges using such technologies.</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%">
-<tbody>
-<tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>e6s Co., Ltd. President 　Masamitsu Takanami</strong></td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%;height: 129px">
-<tbody>
-<tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-567" src="/images/imported/pages/ja-team-2-6.jpg" alt="" width="547" height="547"></td>
-<td style="width: 74.4173%;height: 129px">I have commercialized what I have been researching at university since the 3.11 earthquake. Toilet has been out of the theme of disaster response in the past, but I believe that the importance of toilets has been re-recognized due to the Noto Peninsula Earthquake. When a disaster strikes, 90% of people want to use a toilet within 12 hours, yet the probability of receiving temporary toilets within 3 days remains at 34%. The e6s can be used as a regular flush toilet during normal times and can be switched to a self-sustaining independent toilet in times of disaster. Currently, we are active in Fukushima, but we aim to expand across Japan and around the world.</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%">
-<tbody>
-<tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>Environmental Microorganism Research Institute, Co., Ltd.　 President and CEO　Yasunori Baba </strong></td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%;height: 129px">
-<tbody>
-<tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-560" src="/images/imported/pages/ja-team-2-7.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">I have experienced the disaster of 3.11 (the Great East Japan Earthquake). At that time, there was no warm food, no light, and no contact with my family in the evacuation center, but there were weeds. I thought that a device to produce methane from these weeds would be a great help to the evacuees. However, weeds are difficult to ferment into methane. Therefore, we focused on the microorganisms in the stomachs of cows and developed the world’s first highly efficient methane fermentation using cow gastric juice (rumen microorganisms). Therefore, we focused on microorganisms in the stomachs of cows and found the world’s first highly efficient methane fermentation using cow gastric juice. For example, if this device is installed in a supermarket, it can be used to power the store during normal times, and in times of disaster, it can be used to cook food and charge smartphones, making it a disaster prevention center. I am aiming for such a world.</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%">
-<tbody>
-<tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>Challenergy Inc. President and CEO　Atsushi Shimizu</strong></td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%;height: 129px">
-<tbody>
-<tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-564" src="/images/imported/pages/ja-team-2-8.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">After the 3.11 earthquake, I started individual activities aiming to innovate in wind power generation. I won the Grand Winner at the very first TECH PLANTER and started a company, which has now been in existence for 10 years. The micro wind turbine we are currently developing can generate power in light breezes or even blizzards, making it suitable for various environments. As the product is finally coming together, I feel it can be used for disaster prevention. Through this project, I want to create a model case for how to utilize electricity in disaster-stricken areas and demonstrate its usefulness in disaster sites. Since many other venture companies’ products also rely on electricity, I believe we can contribute to those as well.</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%">
-<tbody>
-<tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>Terra Lab Co., Ltd.　Sales Strategy Department Keiichi Aramoto</strong></td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%;height: 129px">
-<tbody>
-<tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-562" src="/images/imported/pages/ja-team-2-9.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">After the 3.11 earthquake, a company was established with a strong awareness of the challenge that data utilization using geographic information systems (GIS) has not advanced. We are conducting R&amp;D on long-distance unmanned flights, enabling aerial photography even in peacetime and establishing a system that allows for immediate on-site photography in emergencies. I heard that it took time to collect information on the size of cracks in roads and the passability of vehicles during the Noto Peninsula earthquake. With our technology, it is possible to acquire comprehensive and detailed 3D data over a wide area, enabling the identification of road cracks, passable routes, and even collapsed buildings. We will work on promptly storing the acquired data in the cloud so that everyone can use it.</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%">
-<tbody>
-<tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>Ridge-i Inc.　President and CEO　Takashi Yanagihara</strong></td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse;width: 100%;height: 129px">
-<tbody>
-<tr style="height: 129px">
-<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-566" src="/images/imported/pages/ja-team-2-10.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">By combining satellite data utilization and AI analysis, we are developing solutions that enable fast and accurate situation analysis, such as landslides, building collapse due to conflicts and disasters, and visualization of marine debris. Recently, we have developed a wide-area change detection AI that analyzes low-resolution and high-resolution images at multiple scales. This AI has been used to analyze global geo-physical changes, situation in conflict zones that are difficult to enter, and update GSI’s maps. These technologies will also be used in the framework of resilience. We also believe that combining them with drone data will enable us to provide comprehensive aerial support.</td>
+<td style="width: 74.4173%;height: 129px">WOTAは、上下水道が使えない状況下での水利用を可能にする、小規模分散型水循環システムを開発しています。能登半島地震では、石川県や６市町の要請を受け、個室シャワー・手洗いスタンドを1月4日から提供開始し、1月末には能登半島のほぼ全域のカバーを実現し、現在も提供を継続しています。しかし、能登半島の数百倍以上の断水被害が想定される首都直下型地震や南海トラフ地震といった「国難級災害」に対しては、対策が大きく不足しています。コストを抑えながら、災害時に水に困らないようにするための社会システムを構築する必要があります。</td>
 </tr>
 </tbody>
 </table>
@@ -187,7 +100,103 @@ institutions that are working together in teams.</p>
 <table style="border-collapse: collapse;width: 100%">
 <tbody>
 <tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>Liberaware Co., Ltd President and CEO　Min Hongkyu</strong></td>
+<td style="width: 100%"><strong>株式会社ACSL 事業開発ユニット 部長　佐々木 大介 </strong></td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse;width: 100%;height: 129px">
+<tbody>
+<tr style="height: 129px">
+<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-577" src="/images/imported/pages/ja-team-2-5.jpg" alt="" width="800" height="800"></td>
+<td style="width: 74.4173%;height: 129px">能登半島地震では、輪島市からの要請で現地で活動しました。今までは自衛隊や現地の方が足で医薬品を取りに行っていましたが、ドローンで代替することで、他のことに時間を使えるようになりました。また、陸路での物流に課題があったので、空撮により船が港に接岸できるか調査を行いました。このような技術を用いて様々な課題の解決に取り組んでいきたいと思います。</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="border-collapse: collapse;width: 100%">
+<tbody>
+<tr style="background-color: #f7a531">
+<td style="width: 100%"><strong>株式会社e6s 代表取締役　高波 正充</strong></td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse;width: 100%;height: 129px">
+<tbody>
+<tr style="height: 129px">
+<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-567" src="/images/imported/pages/ja-team-2-6.jpg" alt="" width="547" height="547"></td>
+<td style="width: 74.4173%;height: 129px">3.11を契機に大学で研究してきたものを商品化しました。これまでトイレは災害対応のテーマから外れていましたが、能登半島地震でトイレの重要性が再認識されたと考えています。災害が起きると12時間以内に90％の方がトイレにいきたくなる一方で、3日以内に仮設トイレが届く確率は34％に留まっています。e6sは平時に普通の水洗トイレとして使い、災害時はインフラに依存しない自立型トイレに切り替えることができます。今は福島で活動していますが、日本中、世界中に広げていきたいと思います。</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="border-collapse: collapse;width: 100%">
+<tbody>
+<tr style="background-color: #f7a531">
+<td style="width: 100%"><strong>環境微生物研究所株式会社 代表取締役社長　馬場 保徳 </strong></td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse;width: 100%;height: 129px">
+<tbody>
+<tr style="height: 129px">
+<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-560" src="/images/imported/pages/ja-team-2-7.jpg" alt="" width="800" height="800"></td>
+<td style="width: 74.4173%;height: 129px">自分自身は学生の頃に3.11で被災した経験があります。家と避難所を往復し、暖かい食べ物も灯もなく、家族とも連絡がつかない中、雑草だけがそこにありました。草からメタンを作る装置があれば、助けになるだろうと考えたのです。しかし、雑草はメタン発酵できないので、牛の胃袋の中にいる微生物に着目し、世界で初めて胃液を使ったメタン発酵の高効率化を見出しました。例えばスーパーマーケットに設置した場合、平時は店舗の中で電力を使用し、災害時は炊き出しやスマホの充電ができ防災拠点になる、そんな世界を目指しています。</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="border-collapse: collapse;width: 100%">
+<tbody>
+<tr style="background-color: #f7a531">
+<td style="width: 100%"><strong>株式会社チャレナジー 代表取締役CEO　清水 敦史</strong></td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse;width: 100%;height: 129px">
+<tbody>
+<tr style="height: 129px">
+<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-564" src="/images/imported/pages/ja-team-2-8.jpg" alt="" width="800" height="800"></td>
+<td style="width: 74.4173%;height: 129px">3.11をきっかけに、風力発電にイノベーションを起こすことを目指して個人で活動を開始しました。テックプランターで最優秀賞をとり、会社化して10年が経ちました。現在開発しているマイクロ風車は、微風でも吹雪でも発電できる環境を選ばない風車です。いよいよプロダクトができ、防災に役立てられると感じています。このプロジェクトを通じて、電気をどう被災地で活用するかというモデルケースをつくり、災害現場で役立つことを実証していきたいです。他のベンチャーのプロダクトも電気を使うことが多いので、それらにも貢献できると考えています。</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="border-collapse: collapse;width: 100%">
+<tbody>
+<tr style="background-color: #f7a531">
+<td style="width: 100%"><strong>株式会社テラ・ラボ　営業戦略部 新本 圭一</strong></td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse;width: 100%;height: 129px">
+<tbody>
+<tr style="height: 129px">
+<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-562" src="/images/imported/pages/ja-team-2-9.jpg" alt="" width="800" height="800"></td>
+<td style="width: 74.4173%;height: 129px">3.11をきっかけに、地理情報システムを活用したデータ利用が進んでいないという強い課題意識をもって設立された会社です。長距離無人飛行の研究開発を進めており、平時でも撮影を実施し、有事の際にも現地にすぐに撮影にいける仕組みも構築しています。能登半島地震では道路の亀裂の大小や車両の通行可否などの情報収集に時間がかかったと伺いました。我々の技術を用いれば、広域で精細な３次元データの取得が可能なので道路の亀裂や通れる道、家屋の倒壊まで判読が可能です。取得したデータは速やかにクラウドに格納してみなさんに使ってもらえるように取り組んでいきます。</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="border-collapse: collapse;width: 100%">
+<tbody>
+<tr style="background-color: #f7a531">
+<td style="width: 100%"><strong>株式会社Ridge-i　代表取締役社長　柳原 尚史 </strong></td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse;width: 100%;height: 129px">
+<tbody>
+<tr style="height: 129px">
+<td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-566" src="/images/imported/pages/ja-team-2-10.jpg" alt="" width="800" height="800"></td>
+<td style="width: 74.4173%;height: 129px">衛星データ活用とAI解析の組み合わせで、土砂崩れや紛争及び災害による建物崩壊、海ごみの可視化など、早く・正確な状況分析を可能とするソリューションを開発しています。最近は、低解像度の画像と高解像度の画像をマルチスケールで分析する広域変化検知AIを開発し、全地球の地物変化の解析や、足を踏み入ることが難しい紛争地域の状況分析、国土地理院の地図の更新業務などにもご利用いただいております。これら技術をレジリエンスの枠組みでも活用していきます。またドローンデータとも組み合わせることで、総合的な空からの支援が可能になると考えています。</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="border-collapse: collapse;width: 100%">
+<tbody>
+<tr style="background-color: #f7a531">
+<td style="width: 100%"><strong>株式会社Liberaware 代表取締役CEO　閔 弘圭 </strong></td>
 </tr>
 </tbody>
 </table>
@@ -195,17 +204,18 @@ institutions that are working together in teams.</p>
 <tbody>
 <tr style="height: 129px">
 <td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-570" src="/images/imported/pages/ja-team-2-11.jpg" alt="" width="800" height="800"></td>
-<td style="width: 74.4173%;height: 129px">In 2013, I was involved in a project at university to use drones to investigate inside a nuclear reactor. At that time, the technology was not advanced enough, and the project ended with just a demonstration experiment because the drones were too large. Feeling frustrated by this, I decided to establish a company with the goal of developing a drone that could be used in the field. It took 11 years, but we finally succeeded in inspecting the inside of a nuclear reactor recently. In response to the Noto Peninsula earthquake, we entered the affected areas and conducted inspections in collapsed houses, shopping malls, commercial facilities, and boiler interiors. I believe that if we had been able to act more quickly and had a well-established system for using technology, we could have done much more. We have established a joint venture company with East Japan Railway Company and store data collected from devices such as mobile phones in the cloud as 3D data. We aim to visualize invisible risks in Japan’s infrastructure and create a safer society.</td>
+<td style="width: 74.4173%;height: 129px">2013年に大学で原子炉の中をドローンで調査するプロジェクトをやっていました。当時の技術ではドローンが大きくて実証実験だけで終了してしまいました。それが悔しくて現場で使えるものを開発したいという思いから会社を設立し、11年かかって先日ようやく原子炉の中の調査に成功しました。能登半島地震でも現地に入り、倒壊した家の中やショッピングモール、商業施設、ボイラー内部の点検を行いましたが、もっと初動が早く、技術を使う体制が整っていれば、できることがもっと多かったのではと感じています。JR東日本とも合弁で会社を設立し、携帯などのデバイスで撮影したデータをクラウド上で３次元データにして保管しています。日本のインフラの見えていないリスクを可視化し、安全な社会をつくっていきたいです。</td>
 </tr>
 </tbody>
 </table>
+<p> </p>
 </div>
 <div style="margin-bottom: 3rem">
-<h2 style="padding: 0 1rem;border-left: 4px solid #f7a531"><b>Academia team</b></h2>
+<h2 style="padding: 0 1rem;border-left: 4px solid #f7a531"><b>アカデミアチーム</b></h2>
 <table style="border-collapse: collapse;width: 100%">
 <tbody>
 <tr style="background-color: #f7a531">
-<td style="width: 100%"><strong>In-Spector　Jaewon LEE , Yuya Takeda , Rintaro Tomita and Junichiro Takahashi</strong></td>
+<td style="width: 100%"><strong>東京大学 学生チーム　In-Spector　李 在原、竹田 悠哉、富田 凜太郎、高橋 淳一郎</strong></td>
 </tr>
 </tbody>
 </table>
@@ -213,8 +223,10 @@ institutions that are working together in teams.</p>
 <tbody>
 <tr style="height: 129px">
 <td style="width: 25.5827%;height: 129px"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-568" src="/images/imported/pages/ja-team-2-12.jpeg" alt="" width="800" height="516"></td>
-<td style="width: 74.4173%;height: 129px">We are developing a system to prevent large-scale forest fires using real-time satellite image processing. Every year, an area of forest equivalent to the entire territory of South Korea disappears, and these large-scale forest fires emit enormous amounts of CO2, accelerating climate change. Through this project, we aim to detect high-risk areas and predict the timing of wildfire occurrences in advance, establishing a system for early fire prevention and suppression, thus contributing to the global environment. We hope to contribute not only to preventing natural disasters in Japan but also around the world.</td>
+<td style="width: 74.4173%;height: 129px">衛星のリアルタイム画像処理によって大規模森林火災を予防するシステムを開発しています。毎年、韓国全領土に匹敵する森林が消失していて、こういった大規模な森林火災は莫大なCO2を排出しており、気候変動を加速させています。このプロジェクトを通じて、火災発生確率が高い場所と発生タイミングを予め検知し、早期に鎮火・予防するシステムを構築して、地球環境に貢献することを目指しています。日本のみならず全世界の自然災害の予防にも貢献していきたいと考えています。</td>
 </tr>
 </tbody>
 </table>
+</div>
+<hr>
 </div>

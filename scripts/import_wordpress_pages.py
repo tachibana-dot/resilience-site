@@ -5,6 +5,7 @@ import html
 import json
 import re
 import mimetypes
+import sys
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
@@ -56,7 +57,30 @@ def write_page(item: dict, language: str, slug: str, source_url: str) -> None:
     out.write_text(f'---\ntitle: {json.dumps(title, ensure_ascii=False)}\nlanguage: {language}\nslug: {json.dumps(slug)}\noriginalUrl: {json.dumps(source_url)}\n---\n\n{body}\n', encoding='utf-8')
 
 
+def write_html_page(language: str, slug: str, source_url: str, title: str) -> None:
+    tree = lxml_html.fromstring(fetch(source_url))
+    nodes = tree.xpath('//*[contains(concat(" ", normalize-space(@class), " "), " article__contents ")]')
+    if not nodes:
+        raise RuntimeError(f'content container not found: {source_url}')
+    body_tree = nodes[0]
+    for node in body_tree.xpath('.//script | .//style | .//noscript'):
+        node.getparent().remove(node)
+    for index, image in enumerate(body_tree.xpath('.//img')):
+        source = image.get('src')
+        if source:
+            image.set('src', localize_image(source, language, slug, index))
+        image.attrib.pop('srcset', None)
+        image.attrib.pop('sizes', None)
+    body = lxml_html.tostring(body_tree, encoding='unicode', method='html').strip()
+    out = ROOT / 'src' / 'content' / 'pages' / language / f'{slug}.md'
+    out.write_text(f'---\ntitle: {json.dumps(title, ensure_ascii=False)}\nlanguage: {language}\nslug: {json.dumps(slug)}\noriginalUrl: {json.dumps(source_url)}\n---\n\n{body}\n', encoding='utf-8')
+
+
 def main() -> None:
+    if '--team-only' in sys.argv:
+        write_html_page('ja', 'team-2', f'{BASE}/team-2/', 'チームからのメッセージ')
+        print('imported Japanese team page')
+        return
     pages = json.loads(fetch(f'{BASE}/wp-json/wp/v2/pages?per_page=100').decode())
     selected_ja = {'core-technology': 103, 'contact': 115, 'download': 824, 'team-2': 356}
     selected_en = {'core-technology': 304, 'contact': 214, 'team-2': 356, 'team-2-2': 356}
@@ -65,6 +89,9 @@ def main() -> None:
         write_page(by_id[page_id], 'ja', slug, f'{BASE}/{slug}/')
     for slug, page_id in selected_en.items():
         write_page(by_id[page_id], 'en', slug, f'{BASE}/en/{slug}/')
+    # The Japanese team page has a separate public URL; the API item shared by
+    # the English translation points to team-2-2 and contains English blocks.
+    write_html_page('ja', 'team-2', f'{BASE}/team-2/', 'チームからのメッセージ')
     print('imported legacy pages')
 
 
