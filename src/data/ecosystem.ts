@@ -12,7 +12,6 @@ export type EcosystemCompany = {
 // duplicated in a second content source. Add or update companies through the
 // solution data and this list only controls the ecosystem grouping.
 export const ecosystemCompanies: EcosystemCompany[] = [
-  { name: 'エコフロント株式会社', role: 'ソリューション提供企業', image: '/images/products/ecofront.jpg', website: 'https://info.gbiz.go.jp/hojin/ichiran?hojinBango=4070001028220', productSlugs: ['ecofront'] },
   { name: '株式会社Planetary Wellness', role: 'ソリューション提供企業', image: '/images/products/planetarywellness.jpeg', website: 'https://planetarywellness.jp', productSlugs: ['planetarywellness'] },
   { name: '株式会社ＡＣＳＬ', role: 'ソリューション提供企業', image: '/images/products/pf4.png', website: 'https://product.acsl.co.jp/', productSlugs: ['pf4', 'soten', 'airtruck'] },
   { name: '株式会社天地人', role: 'ソリューション提供企業', image: '/images/products/tenchijin.jpg', website: 'https://tenchijin.co.jp/', productSlugs: ['tenchijin'] },
