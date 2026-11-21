@@ -6,4 +6,4 @@ import Footer from '../../components/Footer.astro';
 import NewsArchive from '../../components/NewsArchive.astro';
 const news = (await getCollection('news')).filter((item) => item.data.language === 'ja').sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
-<BaseLayout title="News | LVNS RESILIENCE PROJECT"><Header /><NewsArchive news={news} /><Footer /></BaseLayout>
+<BaseLayout title="News | LVNS RESILIENCE PROJECT"><Header /><NewsArchive news={news} showPagination={false} /><Footer /></BaseLayout>
