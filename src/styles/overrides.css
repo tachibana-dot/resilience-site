@@ -55,14 +55,14 @@
 .solution-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:clamp(42px,6vw,73px)}
 .solution-card figure{width:min(100%,160px);margin:0 auto}
 .solution-card figure{background:var(--cream)}
-.news-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:3.3%;margin-top:clamp(42px,6vw,73px)}
+.news-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:clamp(42px,6vw,73px)}
 
 @media(max-width:1040px){
   .header-inner{height:74px;padding:8px 18px}
   .brand img{height:34.5px;max-width:52vw}
   .desktop-nav{gap:16px}
   .hero{padding-top:74px}
-  .news-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+  .news-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
 }
 
 @media(max-width:800px){
