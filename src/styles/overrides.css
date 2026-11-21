@@ -41,6 +41,8 @@
 .ecosystem-card-body{padding:1.25rem 1.35rem 1.45rem}
 .ecosystem-role{margin:0 0 .45rem;color:#e55d38;font:italic 500 .78rem 'Jost',sans-serif;letter-spacing:.05em}
 .ecosystem-card h3{margin:0;font-size:1.1rem;line-height:1.5;font-weight:600}
+.ecosystem-description{margin:.7rem 0 0;color:var(--muted);font-size:.92rem;line-height:1.75}
+.ecosystem-links{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin-top:1rem}
 .ecosystem-products{display:grid;gap:.45rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line)}
 .ecosystem-products a{font-size:.88rem;line-height:1.5;text-decoration:underline;text-decoration-color:#d7cfc2;text-underline-offset:3px}
 .ecosystem-external{display:inline-block;margin-top:1.1rem;font-size:.8rem;color:#e55d38}

@@ -4,7 +4,9 @@ export type EcosystemCompany = {
   name: string;
   role: string;
   image: string;
+  description?: string;
   website?: string;
+  ventureUrl?: string;
   productSlugs: string[];
 };
 
@@ -19,14 +21,14 @@ export const ecosystemCompanies: EcosystemCompany[] = [
   { name: '株式会社e6s（えしっくす）', role: 'ソリューション提供企業', image: '/images/products/e6s.png', website: 'https://e6s.co.jp/', productSlugs: ['e6s'] },
   { name: 'NT技研工業株式会社', role: 'ソリューション提供企業', image: '/images/products/ntgiken.jpg', website: 'http://ntgiken.industries/', productSlugs: ['ntgiken'] },
   { name: '株式会社白獅子', role: 'ソリューション提供企業', image: '/images/products/snowlion.jpg', website: 'https://www.snowlion.co.jp/', productSlugs: ['snowlion'] },
-  { name: '株式会社人機一体', role: '関連ベンチャー', image: '/images/news/noimg.jpg', productSlugs: [] },
+  { name: '株式会社人機一体', role: '関連ベンチャー', image: '/images/ventures/jinki-ittai.webp', description: '人型重機やロボットの遠隔操作技術で、鉄道・建設・災害対応などの重作業を支えます。', ventureUrl: 'https://ventures.lne.st/ventures/jinki-ittai/', productSlugs: [] },
   { name: '株式会社Liberaware', role: '参画ベンチャー', image: '/images/news/liberaware.jpeg', website: 'https://liberaware.co.jp/', productSlugs: [] },
   { name: '株式会社テラ・ラボ', role: '参画ベンチャー', image: '/images/news/terra-labo.jpeg', website: 'https://terra-labo.jp/', productSlugs: [] },
-  { name: '株式会社ナチュラニクス', role: '関連ベンチャー', image: '/images/news/noimg.jpg', productSlugs: [] },
-  { name: '株式会社Sydecas', role: '関連ベンチャー', image: '/images/news/noimg.jpg', productSlugs: [] },
-  { name: '株式会社Aster', role: '関連ベンチャー', image: '/images/news/noimg.jpg', productSlugs: [] },
-  { name: '環境微生物研究所株式会社', role: '参画ベンチャー', image: '/images/team/environmental-microbiology.jpg', productSlugs: [] },
-  { name: '株式会社vitom', role: '関連ベンチャー', image: '/images/news/noimg.jpg', productSlugs: [] },
+  { name: '株式会社ナチュラニクス', role: '関連ベンチャー', image: '/images/ventures/naturenix.webp', description: '3分充電・長寿命電池を基盤に、モビリティや災害対応型ポータブル蓄電池を展開します。', ventureUrl: 'https://ventures.lne.st/ventures/naturenix/', productSlugs: [] },
+  { name: '株式会社Sydecas', role: '関連ベンチャー', image: '/images/ventures/sydecas.png', description: 'こんにゃく由来の素材を活用し、低糖質・低脂質など新しい食のかたちをつくるフードテック企業です。', website: 'https://store.ninzia.jp/pages/corporate', productSlugs: [] },
+  { name: '株式会社Aster', role: '関連ベンチャー', image: '/images/ventures/aster.webp', description: '塗布型の耐震補強材Aster Power Coatingで、既存の壁やブロック塀の防災性能を高めます。', ventureUrl: 'https://ventures.lne.st/ventures/aster/', productSlugs: [] },
+  { name: '環境微生物研究所株式会社', role: '参画ベンチャー', image: '/images/ventures/environmental-microorganism-institute.webp', description: '微生物の力で廃棄野菜などを分解し、メタンガス・電気・液体肥料を生み出す循環技術に取り組みます。', ventureUrl: 'https://ventures.lne.st/ventures/environmental-microorganism-institute/', productSlugs: [] },
+  { name: '株式会社vitom', role: '関連ベンチャー', image: '/images/ventures/vitom.png', description: 'でんぷんの状態を捉えて配合・加熱条件を最適化し、日常にも非常時にも頼れる食をつくります。', ventureUrl: 'https://ventures.lne.st/ventures/vitom/', productSlugs: [] },
 ];
 
 export function ecosystemProducts(slugs: string[]) {
