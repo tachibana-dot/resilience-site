@@ -30,6 +30,7 @@
 .news-meta{font-size:.82rem}
 .outline-button,.contact-button{min-width:260px;min-height:58px;padding:0 56px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;line-height:1.6}
 .site-footer{font-size:.92rem}
+.footer-organizer img{width:190px;max-width:100%;height:auto;margin-top:.5rem;object-fit:contain;object-position:left center}
 .partner-panel{padding:3rem 0 2rem}
 .ecosystem{padding:7rem 0 8rem}
 .ecosystem-intro{max-width:680px;margin:2rem 0 0;font-size:1rem}
