@@ -8,7 +8,6 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  { slug: 'ecofront', title: '電力需要変動型無停電化システム', company: 'エコフロント株式会社', image: '/images/products/ecofront.jpg', summary: '電力機器をIoT化せずに識別・制御し、平時の節電と非常時の電力利用を支えるシステム。', categories: ['solution1', 'solution3'] },
   { slug: 'planetarywellness', title: '孤独ゼロ社会を目指して－ペカン1,000年の恵みと共に－', company: '株式会社Planetary Wellness', image: '/images/products/planetarywellness.jpeg', summary: '心身状態の予測と地域の居場所づくりを組み合わせ、社会的孤立・孤独の解決を目指す取り組み。', categories: ['solution1', 'solution5', 'solution6'] },
   { slug: 'pf4', title: 'マルチユースドローン「PF4」による地すべり、道路崩落被害調査', company: '株式会社ＡＣＳＬ', image: '/images/products/pf4.png', summary: '物流・空撮・測量に対応するドローンを活用し、地すべりや道路崩落の被害調査を効率化。', categories: ['solution1', 'solution4'] },
   { slug: 'soten', title: '小型空撮ドローン（SOTEN）による震災被害調査', company: '株式会社ＡＣＳＬ', image: '/images/products/soten.png', summary: 'セキュリティ対策を施した国産小型ドローンで、孤立集落や港湾などの被害状況を調査。', categories: ['solution1', 'solution2', 'solution4'] },

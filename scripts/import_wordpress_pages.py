@@ -4,12 +4,16 @@ from __future__ import annotations
 import html
 import json
 import re
+import mimetypes
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 from lxml import html as lxml_html
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://resilience.lne.st'
+ASSET_DIR = ROOT / 'public' / 'images' / 'imported' / 'pages'
+ASSET_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def fetch(url: str) -> bytes:
@@ -18,11 +22,30 @@ def fetch(url: str) -> bytes:
         return response.read()
 
 
+def localize_image(source: str, language: str, slug: str, index: int) -> str:
+    source = urljoin(BASE, source)
+    parsed = urlparse(source)
+    suffix = Path(parsed.path).suffix.lower() or '.bin'
+    if suffix not in {'.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'}:
+        suffix = mimetypes.guess_extension('image/jpeg') or '.jpg'
+    target = ASSET_DIR / f'{language}-{slug}-{index}{suffix}'
+    if not target.exists():
+        try:
+            target.write_bytes(fetch(source))
+        except Exception as exc:
+            print(f'warning: image failed {source}: {exc}')
+            return source
+    return '/' + target.relative_to(ROOT / 'public').as_posix()
+
+
 def write_page(item: dict, language: str, slug: str, source_url: str) -> None:
     tree = lxml_html.fromstring(item['content']['rendered'])
     for node in tree.xpath('.//script | .//style | .//noscript'):
         node.getparent().remove(node)
-    for image in tree.xpath('.//img'):
+    for index, image in enumerate(tree.xpath('.//img')):
+        source = image.get('src')
+        if source:
+            image.set('src', localize_image(source, language, slug, index))
         image.attrib.pop('srcset', None)
         image.attrib.pop('sizes', None)
     body = ''.join(lxml_html.tostring(child, encoding='unicode', method='html') for child in tree)
@@ -35,7 +58,7 @@ def write_page(item: dict, language: str, slug: str, source_url: str) -> None:
 
 def main() -> None:
     pages = json.loads(fetch(f'{BASE}/wp-json/wp/v2/pages?per_page=100').decode())
-    selected_ja = {'core-technology': 103, 'contact': 115, 'download': 824}
+    selected_ja = {'core-technology': 103, 'contact': 115, 'download': 824, 'team-2': 356}
     selected_en = {'core-technology': 304, 'contact': 214, 'team-2': 356, 'team-2-2': 356}
     by_id = {item['id']: item for item in pages}
     for slug, page_id in selected_ja.items():
