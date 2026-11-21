@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "environmental-microorganism-satreps-2026"
 originalUrl: "https://emi-methane.com/project/"
-image: "/images/team/environmental-microbiology.jpg"
+image: "/images/news/releases/environmental-microorganism-satreps-2026.webp"
 tags: ["環境微生物研究所", "分散型エネルギー", "資源循環", "参画ベンチャー"]
 ---
 
@@ -18,4 +18,5 @@ tags: ["環境微生物研究所", "分散型エネルギー", "資源循環", "
 <h2>平時の循環が、災害時の自立を支える</h2>
 <p>環境微生物研究所は、2011年の東日本大震災での経験を原点に、地域がエネルギーを自立できる社会を目指しています。平時から廃棄物を資源として活用し、災害時には地域で電気や燃料を確保する。環境と防災をつなぐ分散型インフラの実現に向けた取り組みです。</p>
 <p><a href="https://emi-methane.com/project/" target="_blank" rel="noopener noreferrer">環境微生物研究所のプロジェクトを見る</a> ／ <a href="https://emi-methane.com/about/" target="_blank" rel="noopener noreferrer">会社の取り組みと背景を読む</a></p>
+<p class="article-source-note">※画像はリリース先から流用しています。</p>
 </div>

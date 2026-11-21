@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "challenergy-macnica-2025"
 originalUrl: "https://challenergy.com/2025/09/18/macnica/"
-image: "/images/team/challenergy.jpg"
+image: "/images/news/releases/challenergy-macnica-2025.png"
 tags: ["チャレナジー", "分散型電源", "災害対応", "参画ベンチャー"]
 ---
 
@@ -18,4 +18,5 @@ tags: ["チャレナジー", "分散型電源", "災害対応", "参画ベンチ
 <h2>社会実装に向けた協業</h2>
 <p>マクニカが持つ環境ソリューションの事業基盤と、チャレナジーが持つ小型風力発電の技術を組み合わせ、今後は遠隔管理機能などの高度化も目指します。</p>
 <p><a href="https://challenergy.com/2025/09/18/macnica/" target="_blank" rel="noopener noreferrer">チャレナジーのリリースを読む</a></p>
+<p class="article-source-note">※画像はリリース先から流用しています。</p>
 </div>

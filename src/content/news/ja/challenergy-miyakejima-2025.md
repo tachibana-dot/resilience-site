@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "challenergy-miyakejima-2025"
 originalUrl: "https://challenergy.com/2025/07/16/miyakejima/"
-image: "/images/team/challenergy.jpg"
+image: "/images/news/releases/challenergy-miyakejima-2025.jpg"
 tags: ["チャレナジー", "島嶼", "分散型電源", "参画ベンチャー"]
 ---
 
@@ -18,4 +18,5 @@ tags: ["チャレナジー", "島嶼", "分散型電源", "参画ベンチャー
 <h2>島嶼地域のエネルギーレジリエンスへ</h2>
 <p>チャレナジーは、実証で得られた成果をもとに、島嶼地域への小型風力発電機の導入を広げ、エネルギー自給率とレジリエンスの向上を目指します。</p>
 <p><a href="https://challenergy.com/2025/07/16/miyakejima/" target="_blank" rel="noopener noreferrer">チャレナジーのリリースを読む</a></p>
+<p class="article-source-note">※画像はリリース先から流用しています。</p>
 </div>

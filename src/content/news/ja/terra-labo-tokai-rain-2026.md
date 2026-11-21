@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "terra-labo-tokai-rain-2026"
 originalUrl: "https://terra-labo.jp/eventnews/8038/"
-image: "/images/team/terra-labo.jpg"
+image: "/images/news/releases/terra-labo-tokai-rain-2026.jpg"
 tags: ["テラ・ラボ", "災害対応", "共通状況図", "参画ベンチャー"]
 ---
 
@@ -18,4 +18,5 @@ tags: ["テラ・ラボ", "災害対応", "共通状況図", "参画ベンチャ
 <h2>地域のレジリエンス向上に向けて</h2>
 <p>テラ・ラボは今後も取得したデータの解析と共通状況図の更新を続け、災害対応と地域のレジリエンス向上に取り組みます。</p>
 <p><a href="https://terra-labo.jp/eventnews/8038/" target="_blank" rel="noopener noreferrer">株式会社テラ・ラボの対応報告を読む</a> ／ <a href="https://terra-labo.net/portal/apps/mapviewer/index.html?webmap=be010cb564b04bf1951750725df9392c" target="_blank" rel="noopener noreferrer">共通状況図（COP）を見る</a></p>
+<p class="article-source-note">※画像はリリース先から流用しています。</p>
 </div>

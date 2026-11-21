@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "challenergy-hokkaido-2025"
 originalUrl: "https://challenergy.com/2025/09/10/hokkaido/"
-image: "/images/team/challenergy.jpg"
+image: "/images/news/releases/challenergy-hokkaido-2025.jpg"
 tags: ["チャレナジー", "寒冷地", "分散型電源", "参画ベンチャー"]
 ---
 
@@ -16,4 +16,5 @@ tags: ["チャレナジー", "寒冷地", "分散型電源", "参画ベンチャ
 <p>寒冷地では、太陽光発電の積雪や設備破損、風力発電機の着氷・着雪などが導入の課題になります。チャレナジーの機体は羽根のないサボニウス式を採用し、積雪しにくい垂直軸構造と特殊塗料によって、着氷・着雪のリスクを抑えています。</p>
 <p>低回転で動作するため、バードストライクのリスク低減にもつながります。自然条件の厳しい地域でも使える分散型電源として、寒冷地のレジリエンス強化を目指します。</p>
 <p><a href="https://challenergy.com/2025/09/10/hokkaido/" target="_blank" rel="noopener noreferrer">チャレナジーのリリースを読む</a></p>
+<p class="article-source-note">※画像はリリース先から流用しています。</p>
 </div>

@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "liberaware-fire-agency-2026"
 originalUrl: "https://liberaware.co.jp/%E7%B7%8F%E5%8B%99%E7%9C%81%E6%B6%88%E9%98%B2%E5%BA%81%E3%81%A8%E7%81%BD%E5%AE%B3%E7%8F%BE%E5%A0%B4%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%B0%8F%E5%9E%8B%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE/"
-image: "/images/team/liberaware.jpg"
+image: "/images/news/releases/liberaware-fire-agency-2026.png"
 tags: ["Liberaware", "災害対応", "ドローン", "参画ベンチャー"]
 relatedTechnologies: ["IBIS2"]
 ---
@@ -19,4 +19,5 @@ relatedTechnologies: ["IBIS2"]
 <h2>人命救助と二次災害防止を支える技術へ</h2>
 <p>今後Liberawareは、消防機関等との連携を通じてIBIS2の実用性を高め、全国の消防機関への導入・配備を目指します。人が立ち入ることが困難な場所の情報を迅速かつ安全に取得することで、人命救助の支援と二次災害の防止への貢献が期待されます。</p>
 <p><a href="https://liberaware.co.jp/%E7%B7%8F%E5%8B%99%E7%9C%81%E6%B6%88%E9%98%B2%E5%BA%81%E3%81%A8%E7%81%BD%E5%AE%B3%E7%8F%BE%E5%A0%B4%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%B0%8F%E5%9E%8B%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE/" target="_blank" rel="noopener noreferrer">株式会社Liberawareのリリースを読む</a></p>
+<p class="article-source-note">※画像はリリース先から流用しています。</p>
 </div>

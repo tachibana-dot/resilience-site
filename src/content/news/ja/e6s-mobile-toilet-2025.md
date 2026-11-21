@@ -5,7 +5,7 @@ category: "ニュース"
 language: ja
 slug: "e6s-mobile-toilet-2025"
 originalUrl: "https://www.townnews.co.jp/0117/2025/10/30/808624.html"
-image: "/images/team/e6s.jpg"
+image: "/images/news/releases/e6s-mobile-toilet-2025.jpg"
 tags: ["e6s", "トイレ", "災害対応", "参画ベンチャー"]
 ---
 
@@ -18,4 +18,5 @@ tags: ["e6s", "トイレ", "災害対応", "参画ベンチャー"]
 <h2>平時にも使える災害対応技術</h2>
 <p>災害時に必要となる設備を、平時からさまざまな場所で使える形にしておくことは、いざという時の運用力を高めます。e6sは、インフラに依存しない水洗トイレシステムを通じて、地域の衛生環境と災害対応力の向上に取り組んでいます。</p>
 <p><a href="https://www.townnews.co.jp/0117/2025/10/30/808624.html" target="_blank" rel="noopener noreferrer">報道記事を読む</a> ／ <a href="https://e6s.co.jp/news/" target="_blank" rel="noopener noreferrer">e6s公式ニュースを見る</a></p>
+<p class="article-source-note">※画像は掲載元から流用しています。</p>
 </div>
