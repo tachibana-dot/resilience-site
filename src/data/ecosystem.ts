@@ -22,7 +22,7 @@ const roleOrder: Record<string, number> = {
 export const ecosystemCompanies: EcosystemCompany[] = [
   { name: '株式会社人機一体', role: '関連ベンチャー', image: '/images/ventures/jinki-ittai-tech.webp', description: '人型重機やロボットの遠隔操作技術で、鉄道・建設・災害対応などの重作業を支えます。', ventureUrl: 'https://ventures.lne.st/ventures/jinki-ittai/', productSlugs: [] },
   { name: '株式会社Liberaware', role: '参画ベンチャー', image: '/images/news/liberaware.jpeg', description: '狭く、暗く、危険な空間を小型ドローンで点検し、災害時や平時のインフラ維持管理を安全・省力化します。', website: 'https://liberaware.co.jp/', productSlugs: [] },
-  { name: 'WOTA株式会社', role: '参画ベンチャー', image: '/images/ventures/wota.png', description: '小規模分散型の水循環システムで、災害時の入浴・手洗いなど生活用水と衛生環境を支えます。', website: 'https://wota.co.jp/', productSlugs: [] },
+  { name: 'WOTA株式会社', role: '参画ベンチャー', image: '/images/ventures/wota-kumamoto-feature.png', description: '小規模分散型の水循環システムで、災害時の入浴・手洗いなど生活用水と衛生環境を支えます。', website: 'https://wota.co.jp/', productSlugs: [] },
   { name: '株式会社サグリ', role: '関連ベンチャー', image: '/images/ventures/sagri-disaster-map.png', description: '衛星画像解析とAI・地理空間データを活用し、災害時の被害や支援情報を地図上で可視化します。', ventureUrl: 'https://ventures.lne.st/ventures/sagri/', productSlugs: [] },
   { name: '株式会社テラ・ラボ', role: '参画ベンチャー', image: '/images/news/terra-labo.jpeg', description: '固定翼無人航空機による広域センシングで、災害時の状況把握や復旧・復興に必要な情報収集を支えます。', website: 'https://terra-labo.jp/', productSlugs: [] },
   { name: '株式会社Planetary Wellness', role: 'ソリューション提供企業', image: '/images/products/planetarywellness.jpeg', description: '心身状態の予測と地域の居場所づくりを組み合わせ、孤独・孤立のない社会を目指します。', website: 'https://planetarywellness.jp', productSlugs: ['planetarywellness'] },
