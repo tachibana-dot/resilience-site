@@ -1,0 +1,60 @@
+---
+const { lang = 'ja' } = Astro.props;
+const isEnglish = lang === 'en';
+
+const content = isEnglish ? {
+  heading: 'APPROACH',
+  copy: 'Developing technologies that local communities can use, sustain, and make their own.',
+  intro: [
+    'Leave a Nest combines the knowledge and expertise of local businesses with cutting-edge technologies developed by startups.',
+    'Technology creates real value when it is put to use.',
+    'Through three approaches, we work to advance local industries, empower people to use technology, and create more opportunities for technologies to be applied in communities.',
+  ],
+  diagramSource: 'Local Knowledge & Expertise × Advanced Startup Technologies',
+  diagramTarget: 'Building Communities Where Life Thrives.',
+  diagramNote: 'Empowering people, advancing industries, and making technologies part of everyday life.',
+  items: [
+    { number: '01', label: 'INDUSTRY', title: 'Turning Local Expertise into the Standards of Tomorrow.', body: 'We combine the skills and practical knowledge developed by local businesses with advanced technologies from startups to create new standards that can be applied in real-world settings. By doing so, we aim to advance existing industries and create new business opportunities.', diagram: 'New Standards & Businesses' },
+    { number: '02', label: 'COMPANIES & CHILDREN', title: "Bringing Industry and Technology into Children's Learning.", body: "Employees of local businesses develop hands-on science programs that combine their companies' expertise with technologies from startups. These programs introduce children to the excitement of local industries while helping employees rediscover the value and potential of their own work.", diagram: 'Hands-on Science Education' },
+    { number: '03', label: 'SCHOOLS & UNIVERSITIES', title: 'Making Schools and Universities Hubs for the Future of Their Communities.', body: 'We bring together elementary and secondary schools, universities, local businesses, and startups to develop education and research programs focused on local challenges. Students learn to use advanced technologies and apply them to real-world problems. By bringing university research into these activities, we aim to expand opportunities from education to research, development, and field demonstrations.', diagram: 'Education, Research & Field Demonstrations' },
+  ],
+} : {
+  heading: 'APPROACH',
+  copy: '地域の人が使い続けられる技術を、地域の人とつくる。',
+  intro: [
+    'リバネスは、地域企業が培ってきた知識や技術と、ベンチャーの先端技術を組み合わせ、地域の人々とともに実践します。',
+    '技術は、実際に使われてこそ価値を生み出します。',
+    '産業を進化させ、技術を使える人を育て、地域で技術が使われる場所を増やすために、3つのアプローチで取り組みます。',
+  ],
+  diagramSource: '地域企業の知識・技能 × ベンチャーの先端技術',
+  diagramTarget: '人が生き、続くまちをつくる。',
+  diagramNote: '産業と人が育ち、技術が使われ続ける地域へ。',
+  items: [
+    { number: '01', label: '産業', title: '現場の知識を、未来のスタンダードに。', body: '地域企業が培ってきた技術・技能とベンチャーの先端技術を組み合わせ、現場で使える新しいスタンダードを開発します。既存産業を進化させ、新しい事業を生み出します。', diagram: '新しいスタンダード・事業' },
+    { number: '02', label: '企業と子ども', title: '企業の技術を、子どもたちの学びに。', body: '地域企業の社員が、自社の強みとベンチャーの技術を組み合わせた実験教室を開発します。子どもたちに仕事の面白さを伝えるとともに、社員自身も自社の技術の価値や可能性を再発見します。', diagram: '実験教室・技術の継承' },
+    { number: '03', label: '学校・大学', title: '学校・大学を、地域の未来をつくる拠点に。', body: '地域の小中学校・高校・大学と、地域企業やベンチャーが協力し、まちの課題を題材にした教育・研究活動を行います。子どもたちや学生が先端技術を学び、実際に使いながら地域の課題解決に挑戦します。大学の研究力も活用し、教育から研究開発、地域での実証へと発展させます。', diagram: '教育・研究・地域実証' },
+  ],
+};
+---
+
+<section class="approach section-light" id="approach">
+  <div class="section-inner">
+    <div class="section-heading"><h2><strong><span>A</span>{content.heading.slice(1)}</strong></h2></div>
+    <div class="approach-intro">
+      <h3>{content.copy}</h3>
+      {content.intro.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+
+    <div class="approach-diagram" aria-label={isEnglish ? 'Three approaches from local knowledge to thriving communities' : '地域の知識と技術から、まちの未来へつながる3つのアプローチ'}>
+      <div class="approach-source">{content.diagramSource}</div>
+      <div class="approach-branches">
+        {content.items.map((item) => <div class="approach-branch"><span>{item.number} | {item.label}</span><strong>{item.diagram}</strong></div>)}
+      </div>
+      <div class="approach-target"><strong>{content.diagramTarget}</strong><span>{content.diagramNote}</span></div>
+    </div>
+
+    <div class="approach-details">
+      {content.items.map((item) => <article class="approach-detail"><p class="approach-number">APPROACH {item.number}</p><h3>{item.title}</h3><p>{item.body}</p></article>)}
+    </div>
+  </div>
+</section>

@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SectionHeading from '../components/SectionHeading.astro';
+import ApproachSection from '../components/ApproachSection.astro';
 import { ecosystemCompanies, ecosystemProducts } from '../data/ecosystem';
 
 const news = (await getCollection('news')).filter((item) => item.data.language === 'ja').sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -25,12 +26,9 @@ const solutions = [
       </div>
     </section>
 
-    <section class="vision section-dark" id="vision">
-      <div class="section-inner vision-inner">
-        <SectionHeading letter="V" rest="ISION" />
-        <div class="vision-copy"><h3>しなやかで許容性のある<br class="mobile-only" />社会インフラを創造する</h3><p>効率化を追求した現在の社会システムは、「予想外」のリスクに対して脆弱であることが近年のさまざまな災害を通して明らかになってきました。さらにこれは災害に限った話ではなく、大規模・効率化を追求した現在の社会システム全般が抱える課題であると言えます。<br /><br />本プロジェクトでは、ベンチャー企業を中心としたさまざまなアセットをもつ企業群と共に「しなやかで許容性のある社会システム」のある未来の創造を目指します。</p></div>
-      </div>
-    </section>
+    <section class="vision section-dark" id="vision"><div class="section-inner vision-inner"><SectionHeading letter="V" rest="ISION" /><div class="vision-copy"><h3>人が生き、続くまちをつくる。</h3><p>私たちの暮らしは、多くの人々の知識と技術によって支えられています。<br /><br />しかし、人口減少、社会インフラの老朽化、自然災害などによって、これまでの暮らしを支える仕組みは大きな転換点を迎えています。<br /><br />日本各地には、長い時間をかけて培われてきた知識や技術があります。そして、社会のあり方を変える可能性を持つ新しいテクノロジーも次々と生まれています。<br /><br />リバネスは、これらを組み合わせ、地域の人々とともに新しい暮らしと産業をつくります。<br /><br />平時の豊かさと、変化に対応できる強さを兼ね備えたまちを、日本から世界へ。<br /><br />次の世代が、自分たちの未来に希望と誇りを持てる社会を目指します。</p></div></div></section>
+
+    <ApproachSection lang="ja" />
 
     <section class="solutions section-light" id="solutions"><div class="section-inner"><SectionHeading letter="B" rest="USINESS SOLUTION" sub="ビジネス ソリューション" /><div class="solution-grid">{solutions.map(([name, image, slug]) => <a class="solution-card" href={`/solution_cat/${slug}/`}><figure><img src={`/images/solutions/${image}`} alt="" loading="lazy" /></figure><span>{name}</span></a>)}</div></div></section>
 
