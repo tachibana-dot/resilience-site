@@ -48,15 +48,12 @@
 .approach-detail h3{font-size:1.35rem;line-height:1.55;margin:0 0 1rem;font-weight:600}
 .approach-detail h4{font-size:1.05rem;line-height:1.65;margin:0 0 1rem;font-weight:700}
 .approach-detail>p:last-child{font-size:.95rem;line-height:1.9;margin:0}
-.approach-case{margin-top:2rem;padding:1.25rem;background:#fff;border:1px solid var(--line)}
+.approach-case{margin-top:2rem;padding:1.1rem 0 0;border-top:1px solid var(--line);background:transparent}
 .approach-case-label{margin:0 0 .65rem;color:#e60012;font:italic 600 .8rem/1.4 'Open Sans',sans-serif;letter-spacing:.04em}
-.approach-case-media{margin:-1.25rem -1.25rem 1.1rem}
-.approach-case-media img{width:100%;aspect-ratio:1.75/1;object-fit:cover}
-.approach-case-media small{display:block;padding:.35rem 1.25rem 0;color:#777;font-size:.7rem;line-height:1.5}
 .approach-case h5,.approach-supplement h5{font-size:1.05rem;line-height:1.55;margin:0 0 .65rem;font-weight:700}
 .approach-case>p:not(.approach-case-label),.approach-supplement>p:not(.approach-case-label){font-size:.9rem;line-height:1.8;margin:0 0 .8rem}
 .approach-case a,.approach-supplement a{color:#e60012;font-size:.82rem;font-weight:700;text-decoration:underline;text-underline-offset:3px}
-.approach-supplement{margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.approach-supplement{margin-top:1.1rem;padding-top:1.1rem;border-top:1px dashed var(--line)}
 .approach-closing{display:grid;gap:.6rem;text-align:center;margin:5rem auto 0;padding:2.2rem 1.5rem;border-top:1px solid #333;border-bottom:1px solid #333}
 .approach-closing strong{font-size:clamp(1.15rem,2.3vw,1.65rem);line-height:1.6}
 .approach-closing span{font-size:clamp(1.1rem,2vw,1.45rem);line-height:1.5;font-weight:600;color:#e60012}
@@ -90,7 +87,7 @@
 .solution-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:clamp(42px,6vw,73px)}
 .solution-card figure{width:min(100%,170px);margin:0 auto}
 .solution-card figure{background:var(--cream)}
-.news-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:3.3%;margin-top:clamp(42px,6vw,73px)}
+.news-grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:3.3%;row-gap:28px;margin-top:clamp(42px,6vw,73px)}
 
 @media(max-width:1040px){
   .header-inner{height:74px;padding:8px 18px}
