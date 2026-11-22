@@ -150,6 +150,9 @@
 .legacy-content img{max-width:100%;height:auto;margin:24px auto}
 .legacy-content h2,.legacy-content h3,.legacy-content h4{color:#e60012;line-height:1.5;margin:42px 0 16px}
 .legacy-content p,.legacy-content li{line-height:2;margin:0 0 18px}
+.prose a,.team-source-content a{color:#e60012;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.prose a:hover,.team-source-content a:hover{color:#b4000e}
+.article-page .back-link{color:#e60012;border-color:#e60012}
 .english-home-links{padding:100px 0;background:#fffbde}
 .english-home-links h1{margin:0 0 18px}
 .english-home-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
